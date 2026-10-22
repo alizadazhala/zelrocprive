@@ -1,0 +1,146 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/collection-essentials",
+      "destination": "/collection-essentials.html",
+      "permanent": true
+    },
+    {
+      "source": "/journal-riviera-before-august",
+      "destination": "/journal-riviera-before-august.html",
+      "permanent": true
+    },
+    {
+      "source": "/collection-signature-seal",
+      "destination": "/collection-signature-seal.html",
+      "permanent": true
+    },
+    {
+      "source": "/collection-maison-imprint",
+      "destination": "/collection-maison-imprint.html",
+      "permanent": true
+    },
+    {
+      "source": "/destinations",
+      "destination": "/destinations.html",
+      "permanent": true
+    },
+    {
+      "source": "/collection",
+      "destination": "/collection.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/collection-art-of-leisure",
+      "destination": "/collection-art-of-leisure.html",
+      "permanent": true
+    },
+    {
+      "source": "/journal-arrival-sequence",
+      "destination": "/journal-arrival-sequence.html",
+      "permanent": true
+    },
+    {
+      "source": "/ethos",
+      "destination": "/ethos.html",
+      "permanent": true
+    },
+    {
+      "source": "/journal",
+      "destination": "/journal.html",
+      "permanent": true
+    },
+    {
+      "source": "/collection-riviera-club",
+      "destination": "/collection-riviera-club.html",
+      "permanent": true
+    },
+    {
+      "source": "/collection-maison-gift-set",
+      "destination": "/collection-maison-gift-set.html",
+      "permanent": true
+    },
+    {
+      "source": "/collection-gift-of-privilege",
+      "destination": "/collection-gift-of-privilege.html",
+      "permanent": true
+    },
+    {
+      "source": "/collection-grand-tour",
+      "destination": "/collection-grand-tour.html",
+      "permanent": true
+    },
+    {
+      "source": "/collection-heritage-crest",
+      "destination": "/collection-heritage-crest.html",
+      "permanent": true
+    },
+    {
+      "source": "/collection-maison-pen",
+      "destination": "/collection-maison-pen.html",
+      "permanent": true
+    },
+    {
+      "source": "/collection-after-hours",
+      "destination": "/collection-after-hours.html",
+      "permanent": true
+    },
+    {
+      "source": "/collection-grand-maison-set",
+      "destination": "/collection-grand-maison-set.html",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/services.html",
+      "permanent": true
+    },
+    {
+      "source": "/collection-wardrobe",
+      "destination": "/collection-wardrobe.html",
+      "permanent": true
+    },
+    {
+      "source": "/membership",
+      "destination": "/membership.html",
+      "permanent": true
+    },
+    {
+      "source": "/journal-villa-brief",
+      "destination": "/journal-villa-brief.html",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/ethos.html",
+      "permanent": true
+    },
+    {
+      "source": "/zelroc-elite",
+      "destination": "/membership.html",
+      "permanent": true
+    },
+    {
+      "source": "/journal/riviera-before-august",
+      "destination": "/journal-riviera-before-august.html",
+      "permanent": true
+    },
+    {
+      "source": "/journal/villa-brief",
+      "destination": "/journal-villa-brief.html",
+      "permanent": true
+    },
+    {
+      "source": "/journal/arrival-sequence",
+      "destination": "/journal-arrival-sequence.html",
+      "permanent": true
+    }
+  ]
+}
