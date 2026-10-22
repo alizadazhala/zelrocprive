@@ -1,0 +1,555 @@
+{
+  "products": [
+    {
+      "key": "maison-essential",
+      "page": "collection-essentials.html",
+      "shopifyHandle": null,
+      "shopifyProductId": null,
+      "variantMappings": [],
+      "category": "The Maison Wardrobe",
+      "department": "wardrobe",
+      "productType": "t-shirt",
+      "title": "The Maison Essential",
+      "priceLabel": "£85",
+      "priceStatus": "proposed",
+      "subtitle": "A quiet signature. An everyday ritual.",
+      "description": "A minimal heavyweight T-shirt concept for women and men. A small embroidered ZELRÔC PRIVÉ wordmark is paired with a subtle back-neck crest.",
+      "image": "assets/wardrobe/maison-essential-0-front.svg",
+      "imageAlt": "The Maison Essential: labelled original vector concept study, not a manufactured product",
+      "media": {
+        "Ivory|front": "assets/wardrobe/maison-essential-0-front.svg",
+        "Ivory|back": "assets/wardrobe/maison-essential-0-back.svg",
+        "Ivory|detail": "assets/wardrobe/maison-essential-0-detail.svg",
+        "Midnight Navy|front": "assets/wardrobe/maison-essential-1-front.svg",
+        "Midnight Navy|back": "assets/wardrobe/maison-essential-1-back.svg",
+        "Midnight Navy|detail": "assets/wardrobe/maison-essential-1-detail.svg"
+      },
+      "options": [
+        {
+          "name": "Colour",
+          "values": [
+            "Ivory",
+            "Midnight Navy"
+          ]
+        },
+        {
+          "name": "Size",
+          "values": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ]
+        }
+      ],
+      "details": [
+        [
+          "Material & construction",
+          "Intended composition: 100% cotton. Target: 220–260 GSM heavyweight jersey, subject to supplier sampling and final production approval. Combed or ring-spun cotton, ribbed collars, reinforced seams, woven labels, clean interior finishing and premium packaging are under consideration; none is confirmed."
+        ],
+        [
+          "Artwork & finish",
+          "Small wordmark embroidery and a back-neck crest, subject to stitch and placement approval. Screen printing or fine embroidery will be assessed through samples. Concept imagery shows proposed design and placement, not approved production proofs."
+        ],
+        [
+          "Fit & sizing",
+          "Designed as a relaxed or boxy oversized silhouette for women and men. The displayed size range is proposed. Measurements and a size guide will follow approved samples."
+        ],
+        [
+          "Care",
+          "Care instructions will be confirmed after fabric, printing and embroidery samples are approved."
+        ]
+      ]
+    },
+    {
+      "key": "riviera-club",
+      "page": "collection-riviera-club.html",
+      "shopifyHandle": null,
+      "shopifyProductId": null,
+      "variantMappings": [],
+      "category": "The Maison Wardrobe",
+      "department": "wardrobe",
+      "productType": "t-shirt",
+      "title": "The Riviera Club",
+      "priceLabel": "£95",
+      "priceStatus": "proposed",
+      "subtitle": "A table on the terrace. No hurry to leave.",
+      "description": "A Mediterranean terrace drawn in spare architectural lines: shaded arches, a café table and the sea beyond. Original Riviera Club typography brings a playful private-club spirit.",
+      "image": "assets/wardrobe/riviera-club-0-front.svg",
+      "imageAlt": "The Riviera Club: labelled original vector concept study, not a manufactured product",
+      "media": {
+        "Ivory|front": "assets/wardrobe/riviera-club-0-front.svg",
+        "Ivory|back": "assets/wardrobe/riviera-club-0-back.svg",
+        "Ivory|detail": "assets/wardrobe/riviera-club-0-detail.svg",
+        "Washed Navy|front": "assets/wardrobe/riviera-club-1-front.svg",
+        "Washed Navy|back": "assets/wardrobe/riviera-club-1-back.svg",
+        "Washed Navy|detail": "assets/wardrobe/riviera-club-1-detail.svg"
+      },
+      "options": [
+        {
+          "name": "Colour",
+          "values": [
+            "Ivory",
+            "Washed Navy"
+          ]
+        },
+        {
+          "name": "Size",
+          "values": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ]
+        }
+      ],
+      "details": [
+        [
+          "Material & construction",
+          "Intended composition: 100% cotton. Target: 220–260 GSM heavyweight jersey, subject to supplier sampling and final production approval. Combed or ring-spun cotton, ribbed collars, reinforced seams, woven labels, clean interior finishing and premium packaging are under consideration; none is confirmed."
+        ],
+        [
+          "Artwork & finish",
+          "Original terrace illustration on the front; a discreet terrace reservation note on the back. Screen printing or fine embroidery will be assessed through samples. Concept imagery shows proposed design and placement, not approved production proofs."
+        ],
+        [
+          "Fit & sizing",
+          "Designed as a relaxed or boxy oversized silhouette for women and men. The displayed size range is proposed. Measurements and a size guide will follow approved samples."
+        ],
+        [
+          "Care",
+          "Care instructions will be confirmed after fabric, printing and embroidery samples are approved."
+        ]
+      ]
+    },
+    {
+      "key": "art-of-leisure",
+      "page": "collection-art-of-leisure.html",
+      "shopifyHandle": null,
+      "shopifyProductId": null,
+      "variantMappings": [],
+      "category": "The Maison Wardrobe",
+      "department": "wardrobe",
+      "productType": "t-shirt",
+      "title": "The Art of Leisure",
+      "priceLabel": "£95",
+      "priceStatus": "proposed",
+      "subtitle": "An afternoon with nothing to prove.",
+      "description": "An editorial study of archways, sunlight and an empty coastal chair. Architecture and open space turn an unhurried afternoon into an original graphic.",
+      "image": "assets/wardrobe/art-of-leisure-0-back.svg",
+      "imageAlt": "The Art of Leisure: labelled original vector concept study, not a manufactured product",
+      "media": {
+        "Ivory|front": "assets/wardrobe/art-of-leisure-0-front.svg",
+        "Ivory|back": "assets/wardrobe/art-of-leisure-0-back.svg",
+        "Ivory|detail": "assets/wardrobe/art-of-leisure-0-detail.svg",
+        "Charcoal|front": "assets/wardrobe/art-of-leisure-1-front.svg",
+        "Charcoal|back": "assets/wardrobe/art-of-leisure-1-back.svg",
+        "Charcoal|detail": "assets/wardrobe/art-of-leisure-1-detail.svg"
+      },
+      "options": [
+        {
+          "name": "Colour",
+          "values": [
+            "Ivory",
+            "Charcoal"
+          ]
+        },
+        {
+          "name": "Size",
+          "values": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ]
+        }
+      ],
+      "details": [
+        [
+          "Material & construction",
+          "Intended composition: 100% cotton. Target: 220–260 GSM heavyweight jersey, subject to supplier sampling and final production approval. Combed or ring-spun cotton, ribbed collars, reinforced seams, woven labels, clean interior finishing and premium packaging are under consideration; none is confirmed."
+        ],
+        [
+          "Artwork & finish",
+          "Minimal front notation; an expressive architectural composition on the back. Screen printing or fine embroidery will be assessed through samples. Concept imagery shows proposed design and placement, not approved production proofs."
+        ],
+        [
+          "Fit & sizing",
+          "Designed as a relaxed or boxy oversized silhouette for women and men. The displayed size range is proposed. Measurements and a size guide will follow approved samples."
+        ],
+        [
+          "Care",
+          "Care instructions will be confirmed after fabric, printing and embroidery samples are approved."
+        ]
+      ]
+    },
+    {
+      "key": "after-hours",
+      "page": "collection-after-hours.html",
+      "shopifyHandle": null,
+      "shopifyProductId": null,
+      "variantMappings": [],
+      "category": "The Maison Wardrobe",
+      "department": "wardrobe",
+      "productType": "t-shirt",
+      "title": "After Hours",
+      "priceLabel": "£110",
+      "priceStatus": "proposed",
+      "subtitle": "The evening is yours.",
+      "description": "A spare vintage-inspired martini study, balanced with elegant typography. For the moment when the plans become pleasantly less precise.",
+      "image": "assets/wardrobe/after-hours-0-front.svg",
+      "imageAlt": "After Hours: labelled original vector concept study, not a manufactured product",
+      "media": {
+        "Washed Black|front": "assets/wardrobe/after-hours-0-front.svg",
+        "Washed Black|back": "assets/wardrobe/after-hours-0-back.svg",
+        "Washed Black|detail": "assets/wardrobe/after-hours-0-detail.svg",
+        "Ivory|front": "assets/wardrobe/after-hours-1-front.svg",
+        "Ivory|back": "assets/wardrobe/after-hours-1-back.svg",
+        "Ivory|detail": "assets/wardrobe/after-hours-1-detail.svg"
+      },
+      "options": [
+        {
+          "name": "Colour",
+          "values": [
+            "Washed Black",
+            "Ivory"
+          ]
+        },
+        {
+          "name": "Size",
+          "values": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ]
+        }
+      ],
+      "details": [
+        [
+          "Material & construction",
+          "Intended composition: 100% cotton. Target: 220–260 GSM heavyweight jersey, subject to supplier sampling and final production approval. Combed or ring-spun cotton, ribbed collars, reinforced seams, woven labels, clean interior finishing and premium packaging are under consideration; none is confirmed."
+        ],
+        [
+          "Artwork & finish",
+          "Original martini illustration and “The evening is yours.” on the front; a small back-neck evening notation. Screen printing or fine embroidery will be assessed through samples. Concept imagery shows proposed design and placement, not approved production proofs."
+        ],
+        [
+          "Fit & sizing",
+          "Designed as a relaxed or boxy oversized silhouette for women and men. The displayed size range is proposed. Measurements and a size guide will follow approved samples."
+        ],
+        [
+          "Care",
+          "Care instructions will be confirmed after fabric, printing and embroidery samples are approved."
+        ]
+      ]
+    },
+    {
+      "key": "grand-tour",
+      "page": "collection-grand-tour.html",
+      "shopifyHandle": null,
+      "shopifyProductId": null,
+      "variantMappings": [],
+      "category": "The Maison Wardrobe",
+      "department": "wardrobe",
+      "productType": "t-shirt",
+      "title": "The Grand Tour",
+      "priceLabel": "£110",
+      "priceStatus": "proposed",
+      "subtitle": "Take the scenic way home.",
+      "description": "A travel keepsake in architectural fragments: Menton, Nice and Antibes, connected by an imaginary wandering route. Original linework celebrates the journey without a fixed itinerary.",
+      "image": "assets/wardrobe/grand-tour-0-back.svg",
+      "imageAlt": "The Grand Tour: labelled original vector concept study, not a manufactured product",
+      "media": {
+        "Ivory|front": "assets/wardrobe/grand-tour-0-front.svg",
+        "Ivory|back": "assets/wardrobe/grand-tour-0-back.svg",
+        "Ivory|detail": "assets/wardrobe/grand-tour-0-detail.svg",
+        "Midnight Navy|front": "assets/wardrobe/grand-tour-1-front.svg",
+        "Midnight Navy|back": "assets/wardrobe/grand-tour-1-back.svg",
+        "Midnight Navy|detail": "assets/wardrobe/grand-tour-1-detail.svg"
+      },
+      "options": [
+        {
+          "name": "Colour",
+          "values": [
+            "Ivory",
+            "Midnight Navy"
+          ]
+        },
+        {
+          "name": "Size",
+          "values": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ]
+        }
+      ],
+      "details": [
+        [
+          "Material & construction",
+          "Intended composition: 100% cotton. Target: 220–260 GSM heavyweight jersey, subject to supplier sampling and final production approval. Combed or ring-spun cotton, ribbed collars, reinforced seams, woven labels, clean interior finishing and premium packaging are under consideration; none is confirmed."
+        ],
+        [
+          "Artwork & finish",
+          "Small front travel notation; a vintage-inspired architectural keepsake on the back. Screen printing or fine embroidery will be assessed through samples. Concept imagery shows proposed design and placement, not approved production proofs."
+        ],
+        [
+          "Fit & sizing",
+          "Designed as a relaxed or boxy oversized silhouette for women and men. The displayed size range is proposed. Measurements and a size guide will follow approved samples."
+        ],
+        [
+          "Care",
+          "Care instructions will be confirmed after fabric, printing and embroidery samples are approved."
+        ]
+      ]
+    },
+    {
+      "key": "heritage-crest",
+      "page": "collection-heritage-crest.html",
+      "shopifyHandle": null,
+      "shopifyProductId": null,
+      "variantMappings": [],
+      "category": "The Maison Wardrobe",
+      "department": "wardrobe",
+      "productType": "t-shirt",
+      "title": "The Heritage Crest",
+      "priceLabel": "£110",
+      "priceStatus": "proposed",
+      "subtitle": "The Maison signature, in full.",
+      "description": "A statement back signature using the supplied ZELRÔC PRIVÉ ornate crest artwork, with restrained branding on the front. The original artwork is preserved at its natural proportions.",
+      "image": "assets/wardrobe/heritage-crest-0-back.svg",
+      "imageAlt": "The Heritage Crest: labelled original vector concept study, not a manufactured product",
+      "media": {
+        "Ivory|front": "assets/wardrobe/heritage-crest-0-front.svg",
+        "Ivory|back": "assets/wardrobe/heritage-crest-0-back.svg",
+        "Ivory|detail": "assets/wardrobe/heritage-crest-0-detail.svg",
+        "Deep Navy|front": "assets/wardrobe/heritage-crest-1-front.svg",
+        "Deep Navy|back": "assets/wardrobe/heritage-crest-1-back.svg",
+        "Deep Navy|detail": "assets/wardrobe/heritage-crest-1-detail.svg"
+      },
+      "options": [
+        {
+          "name": "Colour",
+          "values": [
+            "Ivory",
+            "Deep Navy"
+          ]
+        },
+        {
+          "name": "Size",
+          "values": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ]
+        }
+      ],
+      "details": [
+        [
+          "Material & construction",
+          "Intended composition: 100% cotton. Target: 220–260 GSM heavyweight jersey, subject to supplier sampling and final production approval. Combed or ring-spun cotton, ribbed collars, reinforced seams, woven labels, clean interior finishing and premium packaging are under consideration; none is confirmed."
+        ],
+        [
+          "Artwork & finish",
+          "Authentic supplied crest and wordmark on the back; minimal front branding. Production artwork and print scale await approval. Screen printing or fine embroidery will be assessed through samples. Concept imagery shows proposed design and placement, not approved production proofs."
+        ],
+        [
+          "Fit & sizing",
+          "Designed as a relaxed or boxy oversized silhouette for women and men. The displayed size range is proposed. Measurements and a size guide will follow approved samples."
+        ],
+        [
+          "Care",
+          "Care instructions will be confirmed after fabric, printing and embroidery samples are approved."
+        ]
+      ]
+    },
+    {
+      "key": "signature-seal",
+      "page": "collection-signature-seal.html",
+      "shopifyHandle": null,
+      "category": "The Signature Seal",
+      "title": "The Heritage Seal",
+      "subtitle": "A personal gesture, made tangible.",
+      "description": "A physical sealing stamp with an engraved brass head and a turned wood handle. Intended to leave the ZELRÔC PRIVÉ signature in wax: a considered finishing touch for correspondence, invitations and gifts.",
+      "image": "assets/boutique-seal.jpg",
+      "imageAlt": "Design visualization of a brass and dark wood sealing stamp with navy wax and ivory stationery",
+      "options": [
+        {
+          "name": "Presentation",
+          "values": [
+            "Stamp",
+            "Wax presentation set",
+            "Stationery presentation set"
+          ]
+        }
+      ],
+      "details": [
+        [
+          "Materials & engraving",
+          "The intended design combines brass and wood with engraved ZELRÔC PRIVÉ artwork. Final wood species, head dimensions, engraving and finish are awaiting confirmation."
+        ],
+        [
+          "Presentation sets",
+          "Stamp-only, wax and stationery presentations are under consideration. These preview options do not confirm a set's contents or availability."
+        ],
+        [
+          "Use & care",
+          "Instructions, compatible wax and care guidance will be published with the finished product. This is a physical sealing tool, not a collectible postage stamp."
+        ]
+      ],
+      "department": "objects",
+      "priceLabel": "£55",
+      "priceStatus": "proposed"
+    },
+    {
+      "key": "maison-imprint",
+      "page": "collection-maison-imprint.html",
+      "shopifyHandle": null,
+      "category": "Maison Objects",
+      "department": "objects",
+      "title": "The Maison Imprint",
+      "priceLabel": "£35",
+      "priceStatus": "proposed",
+      "subtitle": "A considered Maison piece.",
+      "description": "A considered addition to the Maison stationery edit. Form, materials and final presentation await approval.",
+      "image": "assets/wardrobe/maison-imprint.svg",
+      "imageAlt": "The Maison Imprint: typographic placeholder; product imagery to follow",
+      "options": [],
+      "details": [
+        [
+          "Design & release",
+          "Final specifications, care and presentation information will be provided after approval."
+        ]
+      ]
+    },
+    {
+      "key": "maison-pen",
+      "page": "collection-maison-pen.html",
+      "shopifyHandle": null,
+      "category": "Maison Objects",
+      "department": "objects",
+      "title": "The Maison Pen",
+      "priceLabel": "Price to be announced",
+      "priceStatus": "proposed",
+      "subtitle": "A considered Maison piece.",
+      "description": "A writing object for everyday correspondence. Design, materials and final construction await approval.",
+      "image": "assets/wardrobe/maison-pen.svg",
+      "imageAlt": "The Maison Pen: typographic placeholder; product imagery to follow",
+      "options": [],
+      "details": [
+        [
+          "Design & release",
+          "Final specifications, care and presentation information will be provided after approval."
+        ]
+      ]
+    },
+    {
+      "key": "maison-gift-set",
+      "page": "collection-maison-gift-set.html",
+      "shopifyHandle": null,
+      "category": "Gifting",
+      "department": "gifting",
+      "title": "The Maison Gift Set",
+      "priceLabel": "From £150",
+      "priceStatus": "proposed",
+      "subtitle": "A considered Maison piece.",
+      "description": "A considered Maison gift presentation. Contents and packaging will be confirmed before release.",
+      "image": "assets/wardrobe/maison-gift-set.svg",
+      "imageAlt": "The Maison Gift Set: typographic placeholder; product imagery to follow",
+      "options": [],
+      "details": [
+        [
+          "Design & release",
+          "Final specifications, care and presentation information will be provided after approval."
+        ]
+      ]
+    },
+    {
+      "key": "grand-maison-set",
+      "page": "collection-grand-maison-set.html",
+      "shopifyHandle": null,
+      "category": "Gifting",
+      "department": "gifting",
+      "title": "The Grand Maison Set",
+      "priceLabel": "Price to be announced",
+      "priceStatus": "proposed",
+      "subtitle": "A considered Maison piece.",
+      "description": "An extended Maison gifting concept. Contents, materials and presentation await approval.",
+      "image": "assets/wardrobe/grand-maison-set.svg",
+      "imageAlt": "The Grand Maison Set: typographic placeholder; product imagery to follow",
+      "options": [],
+      "details": [
+        [
+          "Design & release",
+          "Final specifications, care and presentation information will be provided after approval."
+        ]
+      ]
+    },
+    {
+      "key": "gift-of-privilege",
+      "page": "collection-gift-of-privilege.html",
+      "shopifyHandle": null,
+      "category": "The Gift of Privilege",
+      "title": "ZELRÔC PRIVÉ Gift Card",
+      "subtitle": "The pleasure of choosing, beautifully given.",
+      "description": "A branded gift card intended for the future ZELRÔC PRIVÉ boutique. Presentation, delivery format and redemption terms will be confirmed before release. No gift cards are currently issued or redeemable.",
+      "image": "assets/boutique-gift.jpg",
+      "imageAlt": "Design visualization of a midnight navy ZELRÔC PRIVÉ gift card with an ivory envelope",
+      "options": [],
+      "details": [
+        [
+          "Value & delivery",
+          "Customer-selected value is planned. Limits, currency and delivery format await confirmation; value selection is not yet enabled."
+        ],
+        [
+          "Redemption",
+          "Eligible purchases, expiry rules and terms remain to be configured. Redemption against travel or concierge services is not currently offered or promised."
+        ],
+        [
+          "Before release",
+          "Full terms, applicable consumer information and redemption instructions will be available before any gift card can be purchased."
+        ]
+      ],
+      "department": "gifting",
+      "priceLabel": "Customer-selected value",
+      "priceStatus": "planned"
+    }
+  ],
+  "categories": [
+    {
+      "key": "wardrobe",
+      "title": "The Maison Wardrobe",
+      "page": "collection-wardrobe.html",
+      "priceLabel": "From £85",
+      "futureProductTypes": [
+        "sweatshirt",
+        "knitwear",
+        "cap",
+        "accessory"
+      ]
+    },
+    {
+      "key": "objects",
+      "title": "Maison Objects"
+    },
+    {
+      "key": "gifting",
+      "title": "Gifting"
+    }
+  ]
+}

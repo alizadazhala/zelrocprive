@@ -1,0 +1,202 @@
+{
+  "assets/boutique-essentials-back.jpg": [
+    {
+      "src": "assets/optimized/boutique-essentials-back-640.webp",
+      "width": 640,
+      "height": 800,
+      "bytes": 77006
+    },
+    {
+      "src": "assets/optimized/boutique-essentials-back-960.webp",
+      "width": 960,
+      "height": 1200,
+      "bytes": 148438
+    },
+    {
+      "src": "assets/optimized/boutique-essentials-back-1122.webp",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 194816
+    }
+  ],
+  "assets/boutique-essentials.jpg": [
+    {
+      "src": "assets/optimized/boutique-essentials-640.webp",
+      "width": 640,
+      "height": 800,
+      "bytes": 66282
+    },
+    {
+      "src": "assets/optimized/boutique-essentials-960.webp",
+      "width": 960,
+      "height": 1200,
+      "bytes": 126558
+    },
+    {
+      "src": "assets/optimized/boutique-essentials-1122.webp",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 166984
+    }
+  ],
+  "assets/boutique-gift.jpg": [
+    {
+      "src": "assets/optimized/boutique-gift-640.webp",
+      "width": 640,
+      "height": 800,
+      "bytes": 63640
+    },
+    {
+      "src": "assets/optimized/boutique-gift-960.webp",
+      "width": 960,
+      "height": 1200,
+      "bytes": 115988
+    },
+    {
+      "src": "assets/optimized/boutique-gift-1122.webp",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 150030
+    }
+  ],
+  "assets/boutique-seal.jpg": [
+    {
+      "src": "assets/optimized/boutique-seal-640.webp",
+      "width": 640,
+      "height": 800,
+      "bytes": 65244
+    },
+    {
+      "src": "assets/optimized/boutique-seal-960.webp",
+      "width": 960,
+      "height": 1200,
+      "bytes": 130184
+    },
+    {
+      "src": "assets/optimized/boutique-seal-1122.webp",
+      "width": 1122,
+      "height": 1402,
+      "bytes": 169040
+    }
+  ],
+  "assets/logo-transparent-light.png": [
+    {
+      "src": "assets/optimized/logo-transparent-light-160.webp",
+      "width": 160,
+      "height": 155,
+      "bytes": 13980
+    },
+    {
+      "src": "assets/optimized/logo-transparent-light-320.webp",
+      "width": 320,
+      "height": 311,
+      "bytes": 36606
+    }
+  ],
+  "assets/logo-transparent-navy.png": [
+    {
+      "src": "assets/optimized/logo-transparent-navy-160.webp",
+      "width": 160,
+      "height": 156,
+      "bytes": 16586
+    },
+    {
+      "src": "assets/optimized/logo-transparent-navy-320.webp",
+      "width": 320,
+      "height": 311,
+      "bytes": 44144
+    }
+  ],
+  "assets/zelroc-dining.jpg": [
+    {
+      "src": "assets/optimized/zelroc-dining-640.webp",
+      "width": 640,
+      "height": 427,
+      "bytes": 35072
+    },
+    {
+      "src": "assets/optimized/zelroc-dining-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 62406
+    },
+    {
+      "src": "assets/optimized/zelroc-dining-1440.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 104482,
+      "portrait": {
+        "src": "assets/optimized/zelroc-dining-portrait-600.webp",
+        "width": 600,
+        "height": 1000,
+        "bytes": 67908
+      }
+    }
+  ],
+  "assets/zelroc-hero-coast.jpg": [
+    {
+      "src": "assets/optimized/zelroc-hero-coast-640.webp",
+      "width": 640,
+      "height": 427,
+      "bytes": 24324
+    },
+    {
+      "src": "assets/optimized/zelroc-hero-coast-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 49404
+    },
+    {
+      "src": "assets/optimized/zelroc-hero-coast-1440.webp",
+      "width": 1440,
+      "height": 961,
+      "bytes": 92038,
+      "portrait": {
+        "src": "assets/optimized/zelroc-hero-coast-portrait-600.webp",
+        "width": 600,
+        "height": 1000,
+        "bytes": 36638
+      }
+    }
+  ],
+  "assets/zelroc-jet.jpg": [
+    {
+      "src": "assets/optimized/zelroc-jet-640.webp",
+      "width": 640,
+      "height": 320,
+      "bytes": 23080
+    },
+    {
+      "src": "assets/optimized/zelroc-jet-960.webp",
+      "width": 960,
+      "height": 480,
+      "bytes": 43224
+    },
+    {
+      "src": "assets/optimized/zelroc-jet-1440.webp",
+      "width": 1440,
+      "height": 720,
+      "bytes": 78816
+    }
+  ],
+  "assets/zelroc-villa.jpg": [
+    {
+      "src": "assets/optimized/zelroc-villa-640.webp",
+      "width": 640,
+      "height": 427,
+      "bytes": 47336
+    },
+    {
+      "src": "assets/optimized/zelroc-villa-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 95322
+    },
+    {
+      "src": "assets/optimized/zelroc-villa-1440.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 187090
+    }
+  ]
+}
