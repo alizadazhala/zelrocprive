@@ -1,71 +1,58 @@
-/* Shared Crisp installation. Explicit user actions only; no automatic messages or AI configuration. */
+/* One shared installation; chat opens only after a visitor's explicit click. */
 (() => {
-  if (typeof URLSearchParams!=="undefined" && new URLSearchParams(location.search).get("embed")==="1" && window.parent!==window) return;
+  if (new URLSearchParams(location.search).get('embed') === '1' && window.parent !== window) return;
   if (window.__zelrocCrispInstalled) return;
   window.__zelrocCrispInstalled = true;
   window.$crisp = window.$crisp || [];
   window.CRISP_WEBSITE_ID = '61ecae3f-f1da-4bb8-b57f-42809a607fed';
-  let returnFocus;
-  let failed = false;
-  let requested = false;
-  let waitTimer;
-  const status = document.querySelector('[data-chat-status]');
-  const say = message => { if (status) { status.textContent = message; status.classList.add('is-visible'); } };
+  const direct = 'https://go.crisp.chat/chat/embed/?website_id=61ecae3f-f1da-4bb8-b57f-42809a607fed';
+  let failed = false, returnFocus, waitTimer;
   const queue = command => window.$crisp.push(command);
-  // The site's own labelled launcher replaces the vendor bubble, preventing overlap with the contact bar.
+  const markOpen = () => {
+    clearTimeout(waitTimer);
+    document.documentElement.classList.add('crisp-chat-open');
+  };
   queue(['do', 'chat:hide']);
   queue(['config', 'sound:mute', [true]]);
   queue(['config', 'color:theme', ['blue_grey']]);
   queue(['config', 'container:index', [70]]);
-  const markOpen = () => {
-    document.documentElement.classList.add('crisp-chat-open');
-    if (status) status.classList.remove('is-visible');
-    clearTimeout(waitTimer);
-  };
-  const openChat = () => {
-    queue(['do', 'chat:show']);
-    queue(['do', 'chat:open']);
-    // A restored conversation may already be open but hidden; no new opened event is emitted.
-    if (typeof window.$crisp.is === 'function' && window.$crisp.is('chat:opened')) markOpen();
-  };
   queue(['on', 'chat:opened', markOpen]);
   queue(['on', 'chat:closed', () => {
+    clearTimeout(waitTimer);
     document.documentElement.classList.remove('crisp-chat-open');
     queue(['do', 'chat:hide']);
-    requested = false;
     returnFocus?.focus();
   }]);
-  queue(['on', 'session:loaded', () => {
-    if (requested) openChat();
-  }]);
-  document.querySelectorAll('[data-crisp-open]').forEach(button => {
-    button.addEventListener('click', () => {
-      returnFocus = button;
-      if (failed) {
-        say('Chat could not load. Please email info@zelrocprive.com or use Instagram.');
-        return;
-      }
-      requested = true;
-      say('Opening chat… Email info@zelrocprive.com is also available.');
-      openChat();
+  // Delegation also covers dynamically inserted controls, without duplicate handlers.
+  document.addEventListener('click', event => {
+    const control = event.target.closest?.('[data-crisp-open]');
+    if (!control || event.defaultPrevented || event.button > 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    document.dispatchEvent(new Event('zelroc:close-menu'));
+    // Preserve the ordinary link when blocked, still loading, or JavaScript is unavailable.
+    if (failed || typeof window.$crisp.is !== 'function') return;
+    try {
+      returnFocus = control;
+      queue(['do', 'chat:show']);
+      queue(['do', 'chat:open']);
+      if (window.$crisp.is('chat:opened')) markOpen();
+      event.preventDefault();
       clearTimeout(waitTimer);
-      waitTimer = setTimeout(() => {
-        if (!document.documentElement.classList.contains('crisp-chat-open')) say('Chat is taking longer to load. You can still email info@zelrocprive.com or use Instagram.');
-      }, 12000);
-    });
+      if (!document.documentElement.classList.contains('crisp-chat-open')) {
+        waitTimer = setTimeout(() => {
+          // A partially loaded SDK must not leave a visitor waiting indefinitely.
+          window.location.assign(direct);
+        }, 4000);
+      }
+    } catch (_) {
+      failed = true; // Let this same click follow its working href.
+    }
   });
-  const existing = document.querySelector('script[src="https://client.crisp.chat/l.js"]');
-  if (!existing) {
+  if (!document.querySelector('script[src="https://client.crisp.chat/l.js"]')) {
     const script = document.createElement('script');
     script.src = 'https://client.crisp.chat/l.js';
     script.async = true;
     script.id = 'zelroc-crisp-client';
-    script.onerror = () => {
-      failed = true;
-      clearTimeout(waitTimer);
-      document.documentElement.classList.remove('crisp-chat-open');
-      if (requested) say('Chat could not load. Please email info@zelrocprive.com or use Instagram.');
-    };
+    script.onerror = () => { failed = true; };
     document.head.appendChild(script);
   }
 })();

@@ -67,3 +67,8 @@ if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-mot
   revealEls.forEach((el) => el.classList.add("is-visible"));
 }
 
+
+// Close navigation before a chat action; closing never hides the widget.
+document.addEventListener("zelroc:close-menu", () => {
+  if (panel?.classList.contains("is-open")) setMenu(false);
+});

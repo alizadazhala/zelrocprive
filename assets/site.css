@@ -2031,14 +2031,14 @@ html:has(#private-enquiry:target) { scroll-behavior:auto; }
 @media(max-width:760px){.home-movement{padding:0 0 44px}.home-movement>.section__inner{grid-template-columns:1fr;gap:32px}.home-movement__image img{height:auto;min-height:0;aspect-ratio:2/1;object-fit:cover}.home-movement__copy{padding:0 24px}.home-movement__copy>p:not(.eyebrow):not(.home-movement__note){font-size:15px}.home-movement h2{font-size:36px}.home-movement .eyebrow{margin-bottom:16px}}
 /* Contact leads; the service stays personal and easy to understand. */
 .arrival-contact-actions{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin-top:14px;color:#fff;font-size:14px}
-.arrival-contact-actions button,.arrival-contact-actions a{display:inline-flex;align-items:center;min-height:44px;color:inherit;font:inherit;background:none;border:0;padding:8px 0;text-decoration:underline;text-underline-offset:6px;cursor:pointer}
+.arrival-contact-actions [data-crisp-open],.arrival-contact-actions a{display:inline-flex;align-items:center;min-height:44px;color:inherit;font:inherit;background:none;border:0;padding:8px 0;text-decoration:underline;text-underline-offset:6px;cursor:pointer}
 .arrival-hero__availability{font-size:12px;line-height:1.7;color:rgba(255,255,255,.85);margin:10px 0 0}
 .nav a[href^="contact.html"]{border:1px solid currentColor;padding:10px 16px}
 .home-city-links{display:flex;gap:12px 26px;flex-wrap:wrap;margin-top:25px}.home-city-links a{display:inline-flex;align-items:center;min-height:44px;font-size:14px;text-underline-offset:5px}
 .home-care{background:#eee9df;padding:76px 24px 80px}.home-care__intro{display:grid;grid-template-columns:1fr 1fr;gap:12px 64px;align-items:start}.home-care__intro>.eyebrow{grid-column:1/-1;font-size:10px;letter-spacing:.16em;margin:0}
 .home-care h2{font:400 clamp(34px,4vw,52px)/1.15 var(--serif);margin:8px 0 0}.home-care__intro>p:last-child{font-size:17px;line-height:1.85;max-width:550px;margin:8px 0 0}
 .home-care-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;margin-top:42px}.home-care-grid article{border-top:1px solid var(--border);padding-top:24px}.home-care-grid h3{font:400 29px/1.2 var(--serif);margin:0 0 14px}.home-care-grid p{font-size:15px;line-height:1.85;color:var(--muted);margin:0}
-.home-care__invitation{margin-top:38px}.home-care__invitation>p:first-child{font-size:14px;color:var(--muted)}.home-care__invitation>button{font:inherit;color:var(--ink);background:none;border:0;margin-left:22px;padding:14px 0;min-height:44px;cursor:pointer;text-transform:none;letter-spacing:normal;text-decoration:underline;text-underline-offset:5px}
+.home-care__invitation{margin-top:38px}.home-care__invitation>p:first-child{font-size:14px;color:var(--muted)}.home-care__invitation>[data-crisp-open]{font:inherit;color:var(--ink);background:none;border:0;margin-left:22px;padding:14px 0;min-height:44px;cursor:pointer;text-transform:none;letter-spacing:normal;text-decoration:underline;text-underline-offset:5px}
 .home-care__business{font-size:13px;line-height:1.8;margin-top:24px}.home-care__business a{display:inline-block;padding:8px 0}
 .rail-home-link{color:var(--ivory)}.rail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}.rail-card{border-top:1px solid var(--border);padding:26px 0;min-width:0}.rail-card h2{font:400 34px/1.2 var(--serif)}.rail-card p{font-size:15px;line-height:1.85}.rail-card .eyebrow{font-size:10px}.rail-card .button{margin-top:18px}.destination-rail{margin:32px 0;border-top:1px solid var(--border);padding-top:24px}.destination-rail h4{font:400 26px/1.25 var(--serif);margin:22px 0 12px}.destination-rail p{font-size:15px;line-height:1.85;max-width:850px}
 .dining-cities{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}.dining-cities .location-card h2{font:400 29px/1.25 var(--serif)}
@@ -2051,7 +2051,7 @@ html:has(#private-enquiry:target) { scroll-behavior:auto; }
 .footer-bottom nav{display:flex;gap:8px 20px;flex-wrap:wrap}.footer-bottom nav a{display:inline-flex;align-items:center;min-height:44px;padding:8px 0;text-decoration:none}
 @media(max-width:900px){.dining-cities{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.home-care{padding:48px 24px}.home-care__intro{grid-template-columns:1fr;gap:18px}.home-care__intro>p:last-child{font-size:16px}.home-care-grid{gap:24px;margin-top:30px}.home-care-grid h3{font-size:25px}.home-care-grid p{font-size:14px}.rail-grid{grid-template-columns:1fr;gap:20px}.rail-card h2{font-size:30px}.site-footer .footer-grid{gap:25px}.site-footer .footer-links a,.site-footer .footer-links button{font-size:13px}.footer-signature p{font-size:21px}}
-@media(max-width:560px){.home-care-grid,.dining-cities{grid-template-columns:1fr}.site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.site-footer .footer-contact{grid-column:1/-1}.site-footer .footer-contact .footer-links{flex-direction:row;gap:0 20px;flex-wrap:wrap}.site-footer .footer-links a,.site-footer .footer-links button{font-size:13px}.site-footer .footer-signature{gap:16px}.footer-signature img{width:60px}.footer-signature p{font-size:20px}.home-care__invitation>button{margin-left:16px}}
+@media(max-width:560px){.home-care-grid,.dining-cities{grid-template-columns:1fr}.site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.site-footer .footer-contact{grid-column:1/-1}.site-footer .footer-contact .footer-links{flex-direction:row;gap:0 20px;flex-wrap:wrap}.site-footer .footer-links a,.site-footer .footer-links button{font-size:13px}.site-footer .footer-signature{gap:16px}.footer-signature img{width:60px}.footer-signature p{font-size:20px}.home-care__invitation>[data-crisp-open]{margin-left:16px}}
 @media(max-height:740px) and (max-width:760px){.arrival-hero{padding-top:120px;padding-bottom:80px}.arrival-hero__next{display:none}.arrival-hero h1{margin-bottom:20px}.arrival-hero__intro{font-size:15px;margin-bottom:22px}.arrival-contact-actions{margin-top:8px}.arrival-hero__availability{margin-top:4px}}
 
 /* Destination chapters: immediate atmosphere, useful choices and a direct invitation. */
@@ -2125,3 +2125,23 @@ html:has(#private-enquiry:target) { scroll-behavior:auto; }
 
 .enquiry-honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 .contact-form[aria-busy="true"]{cursor:progress}
+
+/* Dining is a personal shortlist, browsable without a directory-sized first view. */
+.dining-options-grid,.bespoke-dining-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.dining-option{border-top:1px solid rgba(27,42,65,.23);padding:24px 0;min-width:0}
+.dining-option[hidden]{display:none}
+.dining-option h3{font-size:clamp(25px,2.3vw,33px);line-height:1.2;margin:12px 0}
+.dining-option>p:not(.dining-location):not(.dining-cuisines){font-size:16px;line-height:1.7}
+.dining-location{font-size:12px;line-height:1.6;letter-spacing:.08em;color:var(--ink);margin:0}
+.dining-cuisines{font-size:13px;color:var(--ink);margin:0 0 16px}
+.dining-practical{border-top:1px solid rgba(27,42,65,.15);margin-top:20px;padding-top:10px}
+.dining-practical summary{cursor:pointer;min-height:44px;display:flex;align-items:center;justify-content:space-between;font-size:14px}
+.dining-practical p{font-size:14px;line-height:1.7}
+.dining-destination{display:inline-flex;align-items:center;min-height:44px;font-size:13px;margin-top:12px}
+.dining-filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:36px 0 24px}
+.dining-filters select{width:100%;min-height:48px;font:inherit;background:transparent;color:var(--ink);border:1px solid rgba(27,42,65,.35);padding:12px}
+.dining-more{margin:24px 0}
+.bespoke-dining-grid{margin:28px 0 36px}
+.bespoke-dining-grid h3{font-size:27px}
+@media(max-width:1000px){.dining-options-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.dining-options-grid,.bespoke-dining-grid,.dining-filters{grid-template-columns:1fr}.dining-options-grid{gap:10px}.dining-option{padding:24px 0}.dining-filters{gap:18px}}
