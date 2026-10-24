@@ -9,20 +9,15 @@
       "category": "The Maison Wardrobe",
       "department": "wardrobe",
       "productType": "t-shirt",
-      "title": "The Maison Essential",
-      "priceLabel": "£85",
-      "priceStatus": "proposed",
-      "subtitle": "A quiet signature. An everyday ritual.",
-      "description": "A minimal heavyweight T-shirt concept for women and men. A small embroidered ZELRÔC PRIVÉ wordmark is paired with a subtle back-neck crest.",
-      "image": "assets/wardrobe/maison-essential-0-front.svg",
-      "imageAlt": "The Maison Essential: labelled original vector concept study, not a manufactured product",
+      "title": "Can Money Buy You Love?",
+      "priceLabel": "£55",
+      "priceStatus": "fixed",
+      "subtitle": "A fair question.",
+      "description": "An open question, set in navy lettering. An original unisex T-shirt by ZELRÔC.",
+      "image": "assets/wardrobe/maison-essential-caption-v2-unisex-models.webp",
+      "imageAlt": "Can Money Buy You Love? ZELRÔC unisex T-shirt shown on a man and a woman",
       "media": {
-        "Ivory|front": "assets/wardrobe/maison-essential-0-front.svg",
-        "Ivory|back": "assets/wardrobe/maison-essential-0-back.svg",
-        "Ivory|detail": "assets/wardrobe/maison-essential-0-detail.svg",
-        "Midnight Navy|front": "assets/wardrobe/maison-essential-1-front.svg",
-        "Midnight Navy|back": "assets/wardrobe/maison-essential-1-back.svg",
-        "Midnight Navy|detail": "assets/wardrobe/maison-essential-1-detail.svg"
+        "Ivory|models": "assets/wardrobe/maison-essential-caption-v2-unisex-models.webp"
       },
       "options": [
         {
@@ -46,22 +41,20 @@
       ],
       "details": [
         [
-          "Material & construction",
-          "Intended composition: 100% cotton. Target: 220–260 GSM heavyweight jersey, subject to supplier sampling and final production approval. Combed or ring-spun cotton, ribbed collars, reinforced seams, woven labels, clean interior finishing and premium packaging are under consideration; none is confirmed."
-        ],
-        [
-          "Artwork & finish",
-          "Small wordmark embroidery and a back-neck crest, subject to stitch and placement approval. Screen printing or fine embroidery will be assessed through samples. Concept imagery shows proposed design and placement, not approved production proofs."
+          "The design",
+          "Original typographic artwork with the ZELRÔC signature. The imagery previews the intended design; final production details are confirmed before payment."
         ],
         [
           "Fit & sizing",
-          "Designed as a relaxed or boxy oversized silhouette for women and men. The displayed size range is proposed. Measurements and a size guide will follow approved samples."
+          "A relaxed unisex silhouette. Choose your usual size in your pre-order request; we confirm measurements and the size guide before your order is placed."
         ],
         [
-          "Care",
-          "Care instructions will be confirmed after fabric, printing and embroidery samples are approved."
+          "Fabric & finish",
+          "Cotton jersey is intended. Composition, weight, print finish and care instructions are confirmed with the production sample before payment."
         ]
-      ]
+      ],
+      "modelImage": "assets/wardrobe/maison-essential-caption-v2-unisex-models.webp",
+      "modelColour": "Ivory"
     },
     {
       "key": "riviera-club",
@@ -72,20 +65,15 @@
       "category": "The Maison Wardrobe",
       "department": "wardrobe",
       "productType": "t-shirt",
-      "title": "The Riviera Club",
-      "priceLabel": "£95",
-      "priceStatus": "proposed",
-      "subtitle": "A table on the terrace. No hurry to leave.",
-      "description": "A Mediterranean terrace drawn in spare architectural lines: shaded arches, a café table and the sea beyond. Original Riviera Club typography brings a playful private-club spirit.",
-      "image": "assets/wardrobe/riviera-club-0-front.svg",
-      "imageAlt": "The Riviera Club: labelled original vector concept study, not a manufactured product",
+      "title": "I Will Be Late.",
+      "priceLabel": "£55",
+      "priceStatus": "fixed",
+      "subtitle": "Consider this your notice.",
+      "description": "A small declaration, with room to breathe. An original unisex T-shirt by ZELRÔC.",
+      "image": "assets/wardrobe/riviera-club-caption-v2-unisex-models.webp",
+      "imageAlt": "I Will Be Late. ZELRÔC unisex T-shirt shown on a man and a woman",
       "media": {
-        "Ivory|front": "assets/wardrobe/riviera-club-0-front.svg",
-        "Ivory|back": "assets/wardrobe/riviera-club-0-back.svg",
-        "Ivory|detail": "assets/wardrobe/riviera-club-0-detail.svg",
-        "Washed Navy|front": "assets/wardrobe/riviera-club-1-front.svg",
-        "Washed Navy|back": "assets/wardrobe/riviera-club-1-back.svg",
-        "Washed Navy|detail": "assets/wardrobe/riviera-club-1-detail.svg"
+        "Ivory|models": "assets/wardrobe/riviera-club-caption-v2-unisex-models.webp"
       },
       "options": [
         {
@@ -109,22 +97,20 @@
       ],
       "details": [
         [
-          "Material & construction",
-          "Intended composition: 100% cotton. Target: 220–260 GSM heavyweight jersey, subject to supplier sampling and final production approval. Combed or ring-spun cotton, ribbed collars, reinforced seams, woven labels, clean interior finishing and premium packaging are under consideration; none is confirmed."
-        ],
-        [
-          "Artwork & finish",
-          "Original terrace illustration on the front; a discreet terrace reservation note on the back. Screen printing or fine embroidery will be assessed through samples. Concept imagery shows proposed design and placement, not approved production proofs."
+          "The design",
+          "Original typographic artwork with the ZELRÔC signature. The imagery previews the intended design; final production details are confirmed before payment."
         ],
         [
           "Fit & sizing",
-          "Designed as a relaxed or boxy oversized silhouette for women and men. The displayed size range is proposed. Measurements and a size guide will follow approved samples."
+          "A relaxed unisex silhouette. Choose your usual size in your pre-order request; we confirm measurements and the size guide before your order is placed."
         ],
         [
-          "Care",
-          "Care instructions will be confirmed after fabric, printing and embroidery samples are approved."
+          "Fabric & finish",
+          "Cotton jersey is intended. Composition, weight, print finish and care instructions are confirmed with the production sample before payment."
         ]
-      ]
+      ],
+      "modelImage": "assets/wardrobe/riviera-club-caption-v2-unisex-models.webp",
+      "modelColour": "Ivory"
     },
     {
       "key": "art-of-leisure",
@@ -135,20 +121,15 @@
       "category": "The Maison Wardrobe",
       "department": "wardrobe",
       "productType": "t-shirt",
-      "title": "The Art of Leisure",
-      "priceLabel": "£95",
-      "priceStatus": "proposed",
-      "subtitle": "An afternoon with nothing to prove.",
-      "description": "An editorial study of archways, sunlight and an empty coastal chair. Architecture and open space turn an unhurried afternoon into an original graphic.",
-      "image": "assets/wardrobe/art-of-leisure-0-back.svg",
-      "imageAlt": "The Art of Leisure: labelled original vector concept study, not a manufactured product",
+      "title": "London. Paris. Tokyo. ZELRÔC.",
+      "priceLabel": "£55",
+      "priceStatus": "fixed",
+      "subtitle": "No fixed address.",
+      "description": "Three cities and one signature, stacked in clean lettering. An original unisex T-shirt by ZELRÔC.",
+      "image": "assets/wardrobe/art-of-leisure-caption-v2-unisex-models.webp",
+      "imageAlt": "London. Paris. Tokyo. ZELRÔC. ZELRÔC unisex T-shirt shown on a man and a woman",
       "media": {
-        "Ivory|front": "assets/wardrobe/art-of-leisure-0-front.svg",
-        "Ivory|back": "assets/wardrobe/art-of-leisure-0-back.svg",
-        "Ivory|detail": "assets/wardrobe/art-of-leisure-0-detail.svg",
-        "Charcoal|front": "assets/wardrobe/art-of-leisure-1-front.svg",
-        "Charcoal|back": "assets/wardrobe/art-of-leisure-1-back.svg",
-        "Charcoal|detail": "assets/wardrobe/art-of-leisure-1-detail.svg"
+        "Ivory|models": "assets/wardrobe/art-of-leisure-caption-v2-unisex-models.webp"
       },
       "options": [
         {
@@ -172,22 +153,20 @@
       ],
       "details": [
         [
-          "Material & construction",
-          "Intended composition: 100% cotton. Target: 220–260 GSM heavyweight jersey, subject to supplier sampling and final production approval. Combed or ring-spun cotton, ribbed collars, reinforced seams, woven labels, clean interior finishing and premium packaging are under consideration; none is confirmed."
-        ],
-        [
-          "Artwork & finish",
-          "Minimal front notation; an expressive architectural composition on the back. Screen printing or fine embroidery will be assessed through samples. Concept imagery shows proposed design and placement, not approved production proofs."
+          "The design",
+          "Original typographic artwork with the ZELRÔC signature. The imagery previews the intended design; final production details are confirmed before payment."
         ],
         [
           "Fit & sizing",
-          "Designed as a relaxed or boxy oversized silhouette for women and men. The displayed size range is proposed. Measurements and a size guide will follow approved samples."
+          "A relaxed unisex silhouette. Choose your usual size in your pre-order request; we confirm measurements and the size guide before your order is placed."
         ],
         [
-          "Care",
-          "Care instructions will be confirmed after fabric, printing and embroidery samples are approved."
+          "Fabric & finish",
+          "Cotton jersey is intended. Composition, weight, print finish and care instructions are confirmed with the production sample before payment."
         ]
-      ]
+      ],
+      "modelImage": "assets/wardrobe/art-of-leisure-caption-v2-unisex-models.webp",
+      "modelColour": "Ivory"
     },
     {
       "key": "after-hours",
@@ -198,20 +177,15 @@
       "category": "The Maison Wardrobe",
       "department": "wardrobe",
       "productType": "t-shirt",
-      "title": "After Hours",
-      "priceLabel": "£110",
-      "priceStatus": "proposed",
-      "subtitle": "The evening is yours.",
-      "description": "A spare vintage-inspired martini study, balanced with elegant typography. For the moment when the plans become pleasantly less precise.",
-      "image": "assets/wardrobe/after-hours-0-front.svg",
-      "imageAlt": "After Hours: labelled original vector concept study, not a manufactured product",
+      "title": "Old Money. New Money. No Money.",
+      "priceLabel": "£55",
+      "priceStatus": "fixed",
+      "subtitle": "All equally well dressed.",
+      "description": "Three lines. No financial disclosure required. An original unisex T-shirt by ZELRÔC.",
+      "image": "assets/wardrobe/after-hours-caption-v2-unisex-models.webp",
+      "imageAlt": "Old Money. New Money. No Money. ZELRÔC unisex T-shirt shown on a man and a woman",
       "media": {
-        "Washed Black|front": "assets/wardrobe/after-hours-0-front.svg",
-        "Washed Black|back": "assets/wardrobe/after-hours-0-back.svg",
-        "Washed Black|detail": "assets/wardrobe/after-hours-0-detail.svg",
-        "Ivory|front": "assets/wardrobe/after-hours-1-front.svg",
-        "Ivory|back": "assets/wardrobe/after-hours-1-back.svg",
-        "Ivory|detail": "assets/wardrobe/after-hours-1-detail.svg"
+        "Washed Black|models": "assets/wardrobe/after-hours-caption-v2-unisex-models.webp"
       },
       "options": [
         {
@@ -235,22 +209,20 @@
       ],
       "details": [
         [
-          "Material & construction",
-          "Intended composition: 100% cotton. Target: 220–260 GSM heavyweight jersey, subject to supplier sampling and final production approval. Combed or ring-spun cotton, ribbed collars, reinforced seams, woven labels, clean interior finishing and premium packaging are under consideration; none is confirmed."
-        ],
-        [
-          "Artwork & finish",
-          "Original martini illustration and “The evening is yours.” on the front; a small back-neck evening notation. Screen printing or fine embroidery will be assessed through samples. Concept imagery shows proposed design and placement, not approved production proofs."
+          "The design",
+          "Original typographic artwork with the ZELRÔC signature. The imagery previews the intended design; final production details are confirmed before payment."
         ],
         [
           "Fit & sizing",
-          "Designed as a relaxed or boxy oversized silhouette for women and men. The displayed size range is proposed. Measurements and a size guide will follow approved samples."
+          "A relaxed unisex silhouette. Choose your usual size in your pre-order request; we confirm measurements and the size guide before your order is placed."
         ],
         [
-          "Care",
-          "Care instructions will be confirmed after fabric, printing and embroidery samples are approved."
+          "Fabric & finish",
+          "Cotton jersey is intended. Composition, weight, print finish and care instructions are confirmed with the production sample before payment."
         ]
-      ]
+      ],
+      "modelImage": "assets/wardrobe/after-hours-caption-v2-unisex-models.webp",
+      "modelColour": "Washed Black"
     },
     {
       "key": "grand-tour",
@@ -261,20 +233,15 @@
       "category": "The Maison Wardrobe",
       "department": "wardrobe",
       "productType": "t-shirt",
-      "title": "The Grand Tour",
-      "priceLabel": "£110",
-      "priceStatus": "proposed",
-      "subtitle": "Take the scenic way home.",
-      "description": "A travel keepsake in architectural fragments: Menton, Nice and Antibes, connected by an imaginary wandering route. Original linework celebrates the journey without a fixed itinerary.",
-      "image": "assets/wardrobe/grand-tour-0-back.svg",
-      "imageAlt": "The Grand Tour: labelled original vector concept study, not a manufactured product",
+      "title": "Do Well. Dress Well. Sleep Well.",
+      "priceLabel": "£55",
+      "priceStatus": "fixed",
+      "subtitle": "A reasonable set of priorities.",
+      "description": "Three simple instructions for a day well spent. An original unisex T-shirt by ZELRÔC.",
+      "image": "assets/wardrobe/grand-tour-caption-v2-unisex-models.webp",
+      "imageAlt": "Do Well. Dress Well. Sleep Well. ZELRÔC unisex T-shirt shown on a man and a woman",
       "media": {
-        "Ivory|front": "assets/wardrobe/grand-tour-0-front.svg",
-        "Ivory|back": "assets/wardrobe/grand-tour-0-back.svg",
-        "Ivory|detail": "assets/wardrobe/grand-tour-0-detail.svg",
-        "Midnight Navy|front": "assets/wardrobe/grand-tour-1-front.svg",
-        "Midnight Navy|back": "assets/wardrobe/grand-tour-1-back.svg",
-        "Midnight Navy|detail": "assets/wardrobe/grand-tour-1-detail.svg"
+        "Ivory|models": "assets/wardrobe/grand-tour-caption-v2-unisex-models.webp"
       },
       "options": [
         {
@@ -298,22 +265,20 @@
       ],
       "details": [
         [
-          "Material & construction",
-          "Intended composition: 100% cotton. Target: 220–260 GSM heavyweight jersey, subject to supplier sampling and final production approval. Combed or ring-spun cotton, ribbed collars, reinforced seams, woven labels, clean interior finishing and premium packaging are under consideration; none is confirmed."
-        ],
-        [
-          "Artwork & finish",
-          "Small front travel notation; a vintage-inspired architectural keepsake on the back. Screen printing or fine embroidery will be assessed through samples. Concept imagery shows proposed design and placement, not approved production proofs."
+          "The design",
+          "Original typographic artwork with the ZELRÔC signature. The imagery previews the intended design; final production details are confirmed before payment."
         ],
         [
           "Fit & sizing",
-          "Designed as a relaxed or boxy oversized silhouette for women and men. The displayed size range is proposed. Measurements and a size guide will follow approved samples."
+          "A relaxed unisex silhouette. Choose your usual size in your pre-order request; we confirm measurements and the size guide before your order is placed."
         ],
         [
-          "Care",
-          "Care instructions will be confirmed after fabric, printing and embroidery samples are approved."
+          "Fabric & finish",
+          "Cotton jersey is intended. Composition, weight, print finish and care instructions are confirmed with the production sample before payment."
         ]
-      ]
+      ],
+      "modelImage": "assets/wardrobe/grand-tour-caption-v2-unisex-models.webp",
+      "modelColour": "Ivory"
     },
     {
       "key": "heritage-crest",
@@ -324,20 +289,15 @@
       "category": "The Maison Wardrobe",
       "department": "wardrobe",
       "productType": "t-shirt",
-      "title": "The Heritage Crest",
-      "priceLabel": "£110",
-      "priceStatus": "proposed",
-      "subtitle": "The Maison signature, in full.",
-      "description": "A statement back signature using the supplied ZELRÔC PRIVÉ ornate crest artwork, with restrained branding on the front. The original artwork is preserved at its natural proportions.",
-      "image": "assets/wardrobe/heritage-crest-0-back.svg",
-      "imageAlt": "The Heritage Crest: labelled original vector concept study, not a manufactured product",
+      "title": "The Right Way. The Wrong Way. My Way.",
+      "priceLabel": "£55",
+      "priceStatus": "fixed",
+      "subtitle": "A personal house rule.",
+      "description": "Navy lettering with an oxblood-red final word. The decision is yours. An original unisex T-shirt by ZELRÔC.",
+      "image": "assets/wardrobe/heritage-crest-caption-v2-unisex-models.webp",
+      "imageAlt": "The Right Way. The Wrong Way. My Way. ZELRÔC unisex T-shirt shown on a man and a woman",
       "media": {
-        "Ivory|front": "assets/wardrobe/heritage-crest-0-front.svg",
-        "Ivory|back": "assets/wardrobe/heritage-crest-0-back.svg",
-        "Ivory|detail": "assets/wardrobe/heritage-crest-0-detail.svg",
-        "Deep Navy|front": "assets/wardrobe/heritage-crest-1-front.svg",
-        "Deep Navy|back": "assets/wardrobe/heritage-crest-1-back.svg",
-        "Deep Navy|detail": "assets/wardrobe/heritage-crest-1-detail.svg"
+        "Ivory|models": "assets/wardrobe/heritage-crest-caption-v2-unisex-models.webp"
       },
       "options": [
         {
@@ -361,22 +321,20 @@
       ],
       "details": [
         [
-          "Material & construction",
-          "Intended composition: 100% cotton. Target: 220–260 GSM heavyweight jersey, subject to supplier sampling and final production approval. Combed or ring-spun cotton, ribbed collars, reinforced seams, woven labels, clean interior finishing and premium packaging are under consideration; none is confirmed."
-        ],
-        [
-          "Artwork & finish",
-          "Authentic supplied crest and wordmark on the back; minimal front branding. Production artwork and print scale await approval. Screen printing or fine embroidery will be assessed through samples. Concept imagery shows proposed design and placement, not approved production proofs."
+          "The design",
+          "Original typographic artwork with the ZELRÔC signature. The imagery previews the intended design; final production details are confirmed before payment."
         ],
         [
           "Fit & sizing",
-          "Designed as a relaxed or boxy oversized silhouette for women and men. The displayed size range is proposed. Measurements and a size guide will follow approved samples."
+          "A relaxed unisex silhouette. Choose your usual size in your pre-order request; we confirm measurements and the size guide before your order is placed."
         ],
         [
-          "Care",
-          "Care instructions will be confirmed after fabric, printing and embroidery samples are approved."
+          "Fabric & finish",
+          "Cotton jersey is intended. Composition, weight, print finish and care instructions are confirmed with the production sample before payment."
         ]
-      ]
+      ],
+      "modelImage": "assets/wardrobe/heritage-crest-caption-v2-unisex-models.webp",
+      "modelColour": "Ivory"
     },
     {
       "key": "signature-seal",
@@ -413,8 +371,8 @@
         ]
       ],
       "department": "objects",
-      "priceLabel": "£55",
-      "priceStatus": "proposed"
+      "priceLabel": "£35",
+      "priceStatus": "fixed"
     },
     {
       "key": "maison-imprint",
@@ -422,11 +380,11 @@
       "shopifyHandle": null,
       "category": "Maison Objects",
       "department": "objects",
-      "title": "The Maison Imprint",
-      "priceLabel": "£35",
-      "priceStatus": "proposed",
+      "title": "The Maison Notebook",
+      "priceLabel": "£25",
+      "priceStatus": "fixed",
       "subtitle": "A considered Maison piece.",
-      "description": "A considered addition to the Maison stationery edit. Form, materials and final presentation await approval.",
+      "description": "A notebook for plans, places and the details worth keeping. Midnight navy with a quiet Maison signature.",
       "image": "assets/wardrobe/maison-imprint.svg",
       "imageAlt": "The Maison Imprint: typographic placeholder; product imagery to follow",
       "options": [],
@@ -444,10 +402,10 @@
       "category": "Maison Objects",
       "department": "objects",
       "title": "The Maison Pen",
-      "priceLabel": "Price to be announced",
-      "priceStatus": "proposed",
+      "priceLabel": "£20",
+      "priceStatus": "fixed",
       "subtitle": "A considered Maison piece.",
-      "description": "A writing object for everyday correspondence. Design, materials and final construction await approval.",
+      "description": "A simple writing companion, in midnight navy and gold, for everyday notes and considered correspondence.",
       "image": "assets/wardrobe/maison-pen.svg",
       "imageAlt": "The Maison Pen: typographic placeholder; product imagery to follow",
       "options": [],
@@ -459,16 +417,37 @@
       ]
     },
     {
+      "key": "maison-notecards",
+      "page": "collection-maison-notecards.html",
+      "shopifyHandle": null,
+      "category": "Maison Objects",
+      "department": "objects",
+      "title": "The Maison Notecards",
+      "priceLabel": "£15",
+      "priceStatus": "fixed",
+      "subtitle": "A few words, thoughtfully given.",
+      "description": "A set of ten ivory notecards with matching envelopes and a discreet Maison signature.",
+      "image": "assets/wardrobe/maison-notecards.svg",
+      "imageAlt": "Original illustration of ZELRÔC PRIVÉ notecards and envelopes",
+      "options": [],
+      "details": [
+        [
+          "The set",
+          "Ten notecards and matching envelopes. A pre-release design preview; final paper and print specifications will be confirmed before release."
+        ]
+      ]
+    },
+    {
       "key": "maison-gift-set",
       "page": "collection-maison-gift-set.html",
       "shopifyHandle": null,
       "category": "Gifting",
       "department": "gifting",
       "title": "The Maison Gift Set",
-      "priceLabel": "From £150",
-      "priceStatus": "proposed",
+      "priceLabel": "£90",
+      "priceStatus": "fixed",
       "subtitle": "A considered Maison piece.",
-      "description": "A considered Maison gift presentation. Contents and packaging will be confirmed before release.",
+      "description": "The Maison Notebook, Maison Pen and Heritage Seal, brought together in a gift presentation.",
       "image": "assets/wardrobe/maison-gift-set.svg",
       "imageAlt": "The Maison Gift Set: typographic placeholder; product imagery to follow",
       "options": [],
@@ -486,10 +465,10 @@
       "category": "Gifting",
       "department": "gifting",
       "title": "The Grand Maison Set",
-      "priceLabel": "Price to be announced",
-      "priceStatus": "proposed",
+      "priceLabel": "£125",
+      "priceStatus": "fixed",
       "subtitle": "A considered Maison piece.",
-      "description": "An extended Maison gifting concept. Contents, materials and presentation await approval.",
+      "description": "A T-shirt, notebook, pen, notecards and Heritage Seal, brought together as the Grand Maison Set.",
       "image": "assets/wardrobe/grand-maison-set.svg",
       "imageAlt": "The Grand Maison Set: typographic placeholder; product imagery to follow",
       "options": [],
@@ -510,7 +489,16 @@
       "description": "A branded gift card intended for the future ZELRÔC PRIVÉ boutique. Presentation, delivery format and redemption terms will be confirmed before release. No gift cards are currently issued or redeemable.",
       "image": "assets/boutique-gift.jpg",
       "imageAlt": "Design visualization of a midnight navy ZELRÔC PRIVÉ gift card with an ivory envelope",
-      "options": [],
+      "options": [
+        {
+          "name": "Gift value",
+          "values": [
+            "£100",
+            "£250",
+            "£500"
+          ]
+        }
+      ],
       "details": [
         [
           "Value & delivery",
@@ -526,8 +514,8 @@
         ]
       ],
       "department": "gifting",
-      "priceLabel": "Customer-selected value",
-      "priceStatus": "planned"
+      "priceLabel": "£100",
+      "priceStatus": "fixed"
     }
   ],
   "categories": [

@@ -1,39 +1,25 @@
-import { createStorefrontProvider } from "./provider.js";
-
-// These controls explore the intended design. They do not select sellable variants.
-for (const product of document.querySelectorAll("[data-product]")) {
-  const summary = product.querySelector("[data-selection-summary]");
-  const updateSelection = () => {
-    const selection = [...product.querySelectorAll("fieldset[data-option]")].map(group => {
-      const selected = group.querySelector("input:checked");
-      return `${group.dataset.option}: ${selected ? selected.value : "not selected"}`;
-    });
-    const mediaElement = product.querySelector("[data-concept-media]");
-    if (mediaElement) {
-      const media = JSON.parse(mediaElement.textContent);
-      const colour = product.querySelector('[data-option="Colour"] input:checked')?.value;
-      const view = product.querySelector('input[name="view"]:checked')?.value || "front";
-      const image = product.querySelector("[data-concept-image]");
-      if (media[`${colour}|${view}`]) {
-        image.src = media[`${colour}|${view}`];
-        image.alt = `${product.querySelector("h1").textContent} — ${colour}, ${view} concept study; not a manufactured product`;
-      }
-    }
-    if (summary) summary.textContent = `Design preview — ${selection.join(" · ")}. Purchasing remains unavailable.`;
-  };
-  product.querySelectorAll("input[type=radio]").forEach(input => input.addEventListener("change", updateSelection));
-  if (product.querySelector("fieldset")) updateSelection();
-}
-
-// Fail closed: a changed config or failed adapter never enables purchasing.
-try {
-  const provider = createStorefrontProvider();
-  await Promise.all([...document.querySelectorAll("[data-product]")].map(async product => {
-    const state = await provider.resolveProduct({ key: product.dataset.product });
-    product.dataset.storefrontStatus = state.status;
-  }));
-} catch {
-  document.querySelectorAll("[data-storefront-message]").forEach(message => {
-    message.textContent = "Purchasing is unavailable. Please return for release details.";
-  });
+// A pre-order request is prepared locally and sent by the guest's email app.
+// No payment is taken and no order is confirmed by this static website.
+for (const product of document.querySelectorAll('[data-product]')) {
+ const link=product.querySelector('[data-preorder-link]');
+ const summary=product.querySelector('[data-selection-summary]');
+ const quantity=product.querySelector('[data-preorder-quantity]');
+ function update(){
+  const value=product.querySelector('[data-option="Gift value"] input:checked');
+  if(value)product.querySelectorAll('[data-product-price]').forEach(n=>n.textContent=value.value);
+  const selection=[...product.querySelectorAll('fieldset[data-option]')].map(group=>`${group.dataset.option}: ${group.querySelector('input:checked')?.value||'please choose'}`);
+  const title=product.querySelector('h1').textContent;
+  const price=product.querySelector('[data-product-price]').textContent;
+  summary.textContent=selection.join(' · ')+` · Quantity: ${quantity.value}`;
+  const body=[`Hello ZELRÔC PRIVÉ,`,``,`I would like to request a pre-order.`,`Design: ${title}`,`Price per item: ${price}`,...selection,`Quantity: ${quantity.value}`,``,`My name: `,`Delivery country: `,`Any notes: `,``,`Please confirm availability, production timing, delivery charges and payment arrangements before placing my order.`].join('\n');
+  link.href='mailto:info@zelrocprive.com?subject='+encodeURIComponent('Pre-order — '+title)+'&body='+encodeURIComponent(body);
+ }
+ product.querySelectorAll('input').forEach(input=>input.addEventListener('input',update));
+ link.addEventListener('click',event=>{
+  const size=product.querySelector('[data-option="Size"]');
+  if(size&&!size.querySelector('input:checked')){event.preventDefault();summary.textContent='Please choose your size before requesting a pre-order.';size.querySelector('input').focus();return;}
+  if(!quantity.reportValidity()){event.preventDefault();return;}
+  update();
+ });
+ update();
 }
