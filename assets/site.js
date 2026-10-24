@@ -1,3 +1,4 @@
+document.documentElement.classList.add("js-enabled");
 const header = document.querySelector(".site-header");
 const toggle = document.querySelector("[data-menu-toggle]");
 const panel = document.querySelector("[data-mobile-panel]");
@@ -6,12 +7,13 @@ const close = document.querySelector("[data-mobile-close]");
 let menuReturnFocus;
 function setMenu(open) {
   if (!panel) return;
+  if (open) window.$crisp?.push(["do", "chat:hide"]);
   if (open) menuReturnFocus = toggle || document.activeElement;
   panel.classList.toggle("is-open", open);
   panel.inert = !open;
   toggle?.setAttribute("aria-expanded", String(open));
   document.body.style.overflow = open ? "hidden" : "";
-  document.querySelectorAll("main, .site-footer, .site-header, .skip-link").forEach(el => { el.inert = open; });
+  document.querySelectorAll("main, .site-footer, .site-header, .skip-link, .contact-dock").forEach(el => { el.inert = open; });
   if (open) close?.focus();
   else menuReturnFocus?.focus();
 }
@@ -20,13 +22,13 @@ document.addEventListener("keydown", event => {
   if (!panel?.classList.contains("is-open")) return;
   if (event.key === "Escape") { event.preventDefault(); setMenu(false); }
   if (event.key === "Tab") {
-    const items = [...panel.querySelectorAll("button, a[href]")];
+    const items = [...panel.querySelectorAll("button, a[href], summary")].filter(el=>el.getClientRects().length && !el.closest("details:not([open])") || el.matches("summary"));
     const first = items[0], last = items[items.length - 1];
     if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
     else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
   }
 });
-window.matchMedia("(min-width: 1201px)").addEventListener("change", event => {
+window.matchMedia("(min-width: 1361px)").addEventListener("change", event => {
   if (event.matches && panel?.classList.contains("is-open")) setMenu(false);
 });
 
@@ -65,38 +67,3 @@ if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-mot
   revealEls.forEach((el) => el.classList.add("is-visible"));
 }
 
-const form = document.querySelector("[data-contact-form]");
-if (form) {
-  const status = form.querySelector("[data-form-status]");
-  const draft = form.querySelector("[data-email-draft]");
-
-  form.addEventListener("input", () => {
-    if (draft) { draft.hidden = true; draft.href = "mailto:info@zelrocprive.com"; }
-    if (status) status.textContent = "";
-    form.querySelectorAll("input, textarea").forEach(field => field.setCustomValidity(""));
-  });
-
-  form.addEventListener("submit", event => {
-    event.preventDefault();
-    for (const field of form.querySelectorAll("[required]")) {
-      field.setCustomValidity(field.value.trim() ? "" : "Please complete this field.");
-    }
-    if (!form.reportValidity()) return;
-    const data = new FormData(form);
-    const value = name => String(data.get(name) || "").trim();
-    const subject = `Private enquiry — ${value("nature")} — ${value("name")}`;
-    const body = [
-      `Full name: ${value("name")}`,
-      `Email address: ${value("email")}`,
-      `Nature of enquiry: ${value("nature")}`,
-      `Destination or location: ${value("destination") || "Not specified"}`,
-      `Preferred travel dates: ${value("dates") || "Not specified"}`,
-      "", "Your request or requirements:", value("message"),
-    ].join("\n");
-    if (draft) {
-      draft.href = `mailto:info@zelrocprive.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      draft.hidden = false;
-    }
-    if (status) status.textContent = "Your enquiry has not been sent. Open the email draft below, review it and send it from your email app. If no email app is configured, email info@zelrocprive.com directly.";
-  });
-}
