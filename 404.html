@@ -1,73 +1,60 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Page not found | ZELRÔC PRIVÉ</title><meta name="description" content="This address could not be found. Return to the ZELRÔC PRIVÉ Maison or begin a private enquiry."><meta name="robots" content="noindex"><link rel="canonical" href="https://zelrocprive.com/404.html"><style>body{margin:0;background:#f8f5ee;color:#1b2a41;font:16px/1.8 system-ui,sans-serif}main{max-width:760px;margin:auto;padding:18vh 24px}p{max-width:540px}h1{font:normal clamp(44px,8vw,80px)/1.1 Georgia,serif}nav{display:flex;flex-wrap:wrap;gap:24px}a{color:inherit;text-underline-offset:6px;overflow-wrap:anywhere}:focus-visible{outline:2px solid;outline-offset:5px}.eyebrow{font-size:11px;letter-spacing:.2em}button{padding:12px 18px;min-height:44px;border:1px solid #1b2a41;background:transparent;color:inherit;font:inherit;cursor:pointer}</style></head><body><main id="main-content" tabindex="-1"><p class="eyebrow">ZELRÔC PRIVÉ / 404</p><h1>A different direction.</h1><p>This address could not be found. Return to the Maison or tell us what you have in mind.</p><nav aria-label="Page recovery"><a href="https://zelrocprive.com/">Return to the Maison</a><a href="https://zelrocprive.com/contact.html">Begin Your Enquiry</a><a href="https://zelrocprive.com/membership.html">ZELRÔC ÉLITE</a></nav><p><a href="mailto:info@zelrocprive.com">info@zelrocprive.com</a><br><a href="https://www.instagram.com/zelrocprive/">Instagram</a></p><p><button type="button" data-crisp-open>Chat with us</button></p><p data-chat-status role="status" aria-live="polite"></p></main><!-- BEGIN CRISP -->
-    <script data-crisp-installation>/* Shared Crisp installation. Explicit user actions only; no automatic messages or AI configuration. */
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Page not found | ZELRÔC PRIVÉ</title><meta name="description" content="This address could not be found. Return to the ZELRÔC PRIVÉ Maison or begin a private enquiry."><meta name="robots" content="noindex"><link rel="canonical" href="https://zelrocprive.com/404.html"><style>body{margin:0;background:#f8f5ee;color:#1b2a41;font:16px/1.8 system-ui,sans-serif}main{max-width:760px;margin:auto;padding:18vh 24px}p{max-width:540px}h1{font:normal clamp(44px,8vw,80px)/1.1 Georgia,serif}nav{display:flex;flex-wrap:wrap;gap:24px}a{color:inherit;text-underline-offset:6px;overflow-wrap:anywhere}:focus-visible{outline:2px solid;outline-offset:5px}.eyebrow{font-size:11px;letter-spacing:.2em}button{padding:12px 18px;min-height:44px;border:1px solid #1b2a41;background:transparent;color:inherit;font:inherit;cursor:pointer}</style></head><body><main id="main-content" tabindex="-1"><p class="eyebrow">ZELRÔC PRIVÉ / 404</p><h1>A different direction.</h1><p>This address could not be found. Return to the Maison or tell us what you have in mind.</p><nav aria-label="Page recovery"><a href="https://zelrocprive.com/">Return to the Maison</a><a href="https://zelrocprive.com/contact.html">Begin Your Enquiry</a><a href="https://zelrocprive.com/membership.html">ZELRÔC ÉLITE</a></nav><p><a href="mailto:info@zelrocprive.com">info@zelrocprive.com</a><br><a href="https://www.instagram.com/zelrocprive/">Instagram</a></p><p><a data-crisp-open href="https://go.crisp.chat/chat/embed/?website_id=61ecae3f-f1da-4bb8-b57f-42809a607fed">Chat with us</a></p><p data-chat-status role="status" aria-live="polite"></p></main><!-- BEGIN CRISP -->
+    <script data-crisp-installation>/* One shared installation; chat opens only after a visitor's explicit click. */
 (() => {
-  if (typeof URLSearchParams!=="undefined" && new URLSearchParams(location.search).get("embed")==="1" && window.parent!==window) return;
+  if (new URLSearchParams(location.search).get('embed') === '1' && window.parent !== window) return;
   if (window.__zelrocCrispInstalled) return;
   window.__zelrocCrispInstalled = true;
   window.$crisp = window.$crisp || [];
   window.CRISP_WEBSITE_ID = '61ecae3f-f1da-4bb8-b57f-42809a607fed';
-  let returnFocus;
-  let failed = false;
-  let requested = false;
-  let waitTimer;
-  const status = document.querySelector('[data-chat-status]');
-  const say = message => { if (status) { status.textContent = message; status.classList.add('is-visible'); } };
+  const direct = 'https://go.crisp.chat/chat/embed/?website_id=61ecae3f-f1da-4bb8-b57f-42809a607fed';
+  let failed = false, returnFocus, waitTimer;
   const queue = command => window.$crisp.push(command);
-  // The site's own labelled launcher replaces the vendor bubble, preventing overlap with the contact bar.
+  const markOpen = () => {
+    clearTimeout(waitTimer);
+    document.documentElement.classList.add('crisp-chat-open');
+  };
   queue(['do', 'chat:hide']);
   queue(['config', 'sound:mute', [true]]);
   queue(['config', 'color:theme', ['blue_grey']]);
   queue(['config', 'container:index', [70]]);
-  const markOpen = () => {
-    document.documentElement.classList.add('crisp-chat-open');
-    if (status) status.classList.remove('is-visible');
-    clearTimeout(waitTimer);
-  };
-  const openChat = () => {
-    queue(['do', 'chat:show']);
-    queue(['do', 'chat:open']);
-    // A restored conversation may already be open but hidden; no new opened event is emitted.
-    if (typeof window.$crisp.is === 'function' && window.$crisp.is('chat:opened')) markOpen();
-  };
   queue(['on', 'chat:opened', markOpen]);
   queue(['on', 'chat:closed', () => {
+    clearTimeout(waitTimer);
     document.documentElement.classList.remove('crisp-chat-open');
     queue(['do', 'chat:hide']);
-    requested = false;
     returnFocus?.focus();
   }]);
-  queue(['on', 'session:loaded', () => {
-    if (requested) openChat();
-  }]);
-  document.querySelectorAll('[data-crisp-open]').forEach(button => {
-    button.addEventListener('click', () => {
-      returnFocus = button;
-      if (failed) {
-        say('Chat could not load. Please email info@zelrocprive.com or use Instagram.');
-        return;
-      }
-      requested = true;
-      say('Opening chat… Email info@zelrocprive.com is also available.');
-      openChat();
+  // Delegation also covers dynamically inserted controls, without duplicate handlers.
+  document.addEventListener('click', event => {
+    const control = event.target.closest?.('[data-crisp-open]');
+    if (!control || event.defaultPrevented || event.button > 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    document.dispatchEvent(new Event('zelroc:close-menu'));
+    // Preserve the ordinary link when blocked, still loading, or JavaScript is unavailable.
+    if (failed || typeof window.$crisp.is !== 'function') return;
+    try {
+      returnFocus = control;
+      queue(['do', 'chat:show']);
+      queue(['do', 'chat:open']);
+      if (window.$crisp.is('chat:opened')) markOpen();
+      event.preventDefault();
       clearTimeout(waitTimer);
-      waitTimer = setTimeout(() => {
-        if (!document.documentElement.classList.contains('crisp-chat-open')) say('Chat is taking longer to load. You can still email info@zelrocprive.com or use Instagram.');
-      }, 12000);
-    });
+      if (!document.documentElement.classList.contains('crisp-chat-open')) {
+        waitTimer = setTimeout(() => {
+          // A partially loaded SDK must not leave a visitor waiting indefinitely.
+          window.location.assign(direct);
+        }, 4000);
+      }
+    } catch (_) {
+      failed = true; // Let this same click follow its working href.
+    }
   });
-  const existing = document.querySelector('script[src="https://client.crisp.chat/l.js"]');
-  if (!existing) {
+  if (!document.querySelector('script[src="https://client.crisp.chat/l.js"]')) {
     const script = document.createElement('script');
     script.src = 'https://client.crisp.chat/l.js';
     script.async = true;
     script.id = 'zelroc-crisp-client';
-    script.onerror = () => {
-      failed = true;
-      clearTimeout(waitTimer);
-      document.documentElement.classList.remove('crisp-chat-open');
-      if (requested) say('Chat could not load. Please email info@zelrocprive.com or use Instagram.');
-    };
+    script.onerror = () => { failed = true; };
     document.head.appendChild(script);
   }
 })();
