@@ -2122,3 +2122,6 @@ html:has(#private-enquiry:target) { scroll-behavior:auto; }
 .preorder-quantity input {width:82px;padding:12px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:inherit;}
 [data-preorder-link] {width:100%;text-align:center;}
 @media(max-width:700px){.mobile-panel nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 22px}.mobile-panel nav>a{font-size:24px;min-height:84px}.hub-paths .button{width:100%;text-align:center}.calendar-filters{grid-template-columns:1fr!important}}
+
+.enquiry-honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.contact-form[aria-busy="true"]{cursor:progress}
