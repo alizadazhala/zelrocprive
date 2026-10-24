@@ -1,0 +1,9 @@
+/* All editorial content stays in the HTML; filters reveal a manageable selection. */
+(()=>{
+ const form=document.querySelector('[data-dining-filters]');if(!form)return;
+ const cards=[...document.querySelectorAll('[data-dining-option]')],more=document.querySelector('[data-dining-more]'),status=document.querySelector('[data-dining-status]'),empty=document.querySelector('[data-dining-empty]');
+ let limit=12;
+ function update(){const data=new FormData(form);const filtered=cards.filter(c=>(!data.get('destination')||c.dataset.destinations.split(',').includes(data.get('destination')))&&(!data.get('cuisine')||c.dataset.cuisines.split('|').includes(data.get('cuisine')))&&(!data.get('mood')||c.dataset.moods.split('|').includes(data.get('mood'))));const shown=new Set(filtered.slice(0,limit));cards.forEach(c=>{c.hidden=!shown.has(c);if(c.hidden)c.querySelector('details').open=false;});more.hidden=filtered.length<=limit;empty.hidden=filtered.length>0;status.textContent=`${Math.min(limit,filtered.length)} of ${filtered.length} published possibilities${data.get('destination')||data.get('cuisine')||data.get('mood')?' match your selection':''}. Your personal shortlist can go further.`;}
+ const initial=new URLSearchParams(location.search);for(const key of ['destination','cuisine','mood']){const select=form.elements.namedItem(key),value=initial.get(key);if(value&&[...select.options].some(o=>o.value===value))select.value=value;}
+ form.addEventListener('submit',e=>e.preventDefault());form.addEventListener('change',()=>{limit=12;update();});more.addEventListener('click',()=>{limit+=12;update();/* Keep focus on the control unless it disappears at the end. */if(more.hidden){const visible=cards.filter(c=>!c.hidden);visible.at(-1)?.querySelector('summary')?.focus({preventScroll:true});}});update();
+})();
