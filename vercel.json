@@ -141,6 +141,121 @@
       "source": "/journal/arrival-sequence",
       "destination": "/journal-arrival-sequence.html",
       "permanent": true
+    },
+    {
+      "source": "/atlas-french-riviera",
+      "destination": "/atlas-french-riviera.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-monte-carlo",
+      "destination": "/atlas-monte-carlo.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-nice",
+      "destination": "/atlas-nice.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-cannes",
+      "destination": "/atlas-cannes.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-saint-tropez",
+      "destination": "/atlas-saint-tropez.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-gironde",
+      "destination": "/atlas-gironde.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-madrid",
+      "destination": "/atlas-madrid.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-turkiye",
+      "destination": "/atlas-turkiye.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-istanbul",
+      "destination": "/atlas-istanbul.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-lake-como",
+      "destination": "/atlas-lake-como.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-courchevel",
+      "destination": "/atlas-courchevel.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-val-disere",
+      "destination": "/atlas-val-disere.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-st-moritz",
+      "destination": "/atlas-st-moritz.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-gstaad",
+      "destination": "/atlas-gstaad.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-iceland",
+      "destination": "/atlas-iceland.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-lapland",
+      "destination": "/atlas-lapland.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-amalfi-capri",
+      "destination": "/atlas-amalfi-capri.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-capri",
+      "destination": "/atlas-capri.html",
+      "permanent": true
+    },
+    {
+      "source": "/atlas-mykonos",
+      "destination": "/atlas-mykonos.html",
+      "permanent": true
+    },
+    {
+      "source": "/business-travel",
+      "destination": "/business-travel.html",
+      "permanent": true
+    },
+    {
+      "source": "/private-villas",
+      "destination": "/private-villas.html",
+      "permanent": true
+    },
+    {
+      "source": "/winter",
+      "destination": "/winter.html",
+      "permanent": true
+    },
+    {
+      "source": "/social-calendar",
+      "destination": "/social-calendar.html",
+      "permanent": true
     }
   ]
 }
