@@ -76,7 +76,7 @@
   ]
 }
     </script>
-    <link rel="stylesheet" href="assets/site.css">
+    <link rel="stylesheet" href="assets/site.css?v=20261025-concierge-1">
   </head>
   <body>
     <!-- BEGIN HEADER -->
@@ -88,18 +88,20 @@
     </header>
     <!-- END HEADER -->
     <!-- BEGIN MOBILE-PANEL -->
-    <div class="mobile-panel" id="mobile-navigation" data-mobile-panel role="dialog" aria-modal="true" aria-label="Navigation" inert><button class="mobile-close" type="button" data-mobile-close aria-label="Close menu"><span aria-hidden="true">&times;</span> <span>Close menu</span></button><nav aria-label="Mobile navigation"><a href="index.html">Home</a><a href="destinations.html">Destinations &amp; Stays</a><a href="dining.html">Experiences</a><a href="business-travel.html">Business Travel</a><a href="collection.html">Shop</a><a href="membership.html">Membership</a><a href="journal.html">Travel Notes</a><a href="ethos.html">About Us</a><div class="menu-enquiry"><a class="button" href="contact.html#private-enquiry">Begin Your Enquiry ↗</a></div></nav></div>
+    <div class="mobile-panel" id="mobile-navigation" data-mobile-panel role="dialog" aria-modal="true" aria-label="Navigation" inert><button class="mobile-close" type="button" data-mobile-close aria-label="Close menu"><span aria-hidden="true">&times;</span> <span>Close menu</span></button><nav aria-label="Mobile navigation"><a href="index.html">Home</a><a href="destinations.html">Destinations &amp; Stays</a><a href="dining.html">Experiences</a><div class="menu-enquiry menu-enquiry--phone"><a class="button" href="contact.html#private-enquiry">Begin Your Enquiry ↗</a></div><a href="business-travel.html">Business Travel</a><a href="collection.html">Shop</a><a href="membership.html">Membership</a><a href="journal.html">Travel Notes</a><a href="ethos.html">About Us</a><div class="menu-enquiry menu-enquiry--wide"><a class="button" href="contact.html#private-enquiry">Begin Your Enquiry ↗</a></div></nav></div>
     <!-- END MOBILE-PANEL -->
 
     <main id="main-content" tabindex="-1"><section class="section enquiry-only"><div class="section__inner"><form class="contact-form" id="private-enquiry" action="https://formsubmit.co/info@zelrocprive.com" method="post" data-contact-form aria-describedby="enquiry-delivery-note">
             <p class="eyebrow">Your enquiry</p>
             <h1 class="enquiry-form-title">Begin Your Enquiry</h1>
-            <p class="form-note">Choose what you know and leave the rest open. Send your ideas directly to our team.</p>
+            <p class="form-note">An idea is enough to begin. You can enquire without choosing a destination or exact dates.</p>
             <p class="enquiry-context" data-enquiry-context hidden></p>
             <div class="form-row">
               <div class="field"><label for="name">Your name <span>(required)</span></label><input id="name" name="name" autocomplete="name" maxlength="160" required></div>
               <div class="field"><label for="email">Your email <span>(required)</span></label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
             </div>
+            <div class="field"><label for="message">How can we help? <span>(optional)</span></label><textarea id="message" name="message" rows="3" maxlength="3000" placeholder="A journey, a reservation, or simply an idea…"></textarea></div>
+            <details class="enquiry-optional enquiry-trip-details"><summary>Add trip details <span>(optional)</span></summary><div class="enquiry-trip-details__body">
             <div class="field"><label for="occupation">Occupation <span>(optional)</span></label><input id="occupation" name="occupation" autocomplete="organization-title" maxlength="160" placeholder="Your profession or role"></div>
             <div class="field"><label for="nature">What would you like help with?</label><select id="nature" name="nature"><option value="">Help me choose</option><option>Travel Planning</option><option>Winter Escape</option><option>Business &amp; Corporate Travel</option><option>Private Villas &amp; Group Stays</option><option>Reservations &amp; Experiences</option><option>Dining &amp; Nightlife</option><option>Events &amp; Experiences</option><option>Private Concierge</option><option>Shop</option><option>Other</option></select></div>
             <div class="field"><label for="destination">Where are you thinking of going? <span>(optional)</span></label><input id="destination" name="destination" list="enquiry-places" maxlength="240" placeholder="One place, several locations, or help me decide"><datalist id="enquiry-places"><option value="Belek, Antalya"><option value="Kemer, Antalya"><option value="Bodrum, Muğla"><option value="Istanbul"><option value="French Riviera &amp; Monaco"><option value="Madrid"><option value="Lake Como"><option value="Courchevel"><option value="Val d’Isère"><option value="St. Moritz"><option value="Gstaad"><option value="Iceland"><option value="Lapland"><option value="Help me choose a destination"></datalist><p class="form-note">You can name more than one place, a hotel, or a region.</p></div>
@@ -119,8 +121,8 @@
 <label class="enquiry-service"><input type="checkbox" name="services" value="Celebrations &amp; thoughtful gifts"><span>Celebrations &amp; thoughtful gifts</span></label>
 <label class="enquiry-service"><input type="checkbox" name="services" value="Business travel &amp; meeting schedule"><span>Business travel &amp; meeting schedule</span></label>
             </div></fieldset>
-            <div class="field"><label for="message">Anything you would like us to know? <span>(optional)</span></label><textarea id="message" name="message" rows="4" maxlength="3000" placeholder="What would you like us to find, book or plan? Tell us your ideas, preferred pace, or anything that matters to your group."></textarea></div>
-            <details class="enquiry-optional"><summary>Add preferences, if you wish</summary><div class="field"><label for="cuisines">Cuisines or dining atmosphere <span>(optional)</span></label><input id="cuisines" name="cuisines" maxlength="300" placeholder="Italian, Georgian, plant-based, a quiet table or an evening with music"></div><div class="field"><label for="stay">Accommodation preferences</label><input id="stay" name="stay" maxlength="240" placeholder="A hotel with a view, connecting rooms, a private villa…"></div><div class="field"><label for="requirements">Dietary, access or other practical needs</label><textarea id="requirements" name="requirements" rows="2" maxlength="800" placeholder="Share only what you would like us to take into account."></textarea></div><div class="field"><label for="company">Company <span>(for a professional enquiry)</span></label><input id="company" name="company" autocomplete="organization" maxlength="160"></div></details>
+            <div class="enquiry-preferences"><div class="field"><label for="cuisines">Cuisines or dining atmosphere <span>(optional)</span></label><input id="cuisines" name="cuisines" maxlength="300" placeholder="Italian, Georgian, plant-based, a quiet table or an evening with music"></div><div class="field"><label for="stay">Accommodation preferences</label><input id="stay" name="stay" maxlength="240" placeholder="A hotel with a view, connecting rooms, a private villa…"></div><div class="field"><label for="requirements">Dietary, access or other practical needs</label><textarea id="requirements" name="requirements" rows="2" maxlength="800" placeholder="Share only what you would like us to take into account."></textarea></div><div class="field"><label for="company">Company <span>(for a professional enquiry)</span></label><input id="company" name="company" autocomplete="organization" maxlength="160"></div></div>
+            </div></details>
             <p class="form-note" id="enquiry-delivery-note">Your enquiry is sent to info@zelrocprive.com through our form delivery service, FormSubmit. We will reply personally to your email address.</p>
             <button class="button" type="submit">Send Enquiry</button>
             <p class="form-status" data-form-status role="status" aria-live="polite"></p>
@@ -139,14 +141,23 @@
  </div>
  <div class="footer-bottom"><span>© 2026 ZELRÔC PRIVÉ</span><nav aria-label="More from the Maison"><a href="collection.html">Shop</a><a href="collection-wardrobe.html">The Wardrobe</a><a href="membership.html">ZELRÔC ÉLITE</a><a href="journal.html">Journal</a></nav><span>Consider it taken care of.</span></div>
 </footer>
-<div class="contact-dock" aria-label="Contact the Maison"><a href="mailto:info@zelrocprive.com">Email us <span>24/7</span></a><a href="https://www.instagram.com/zelrocprive/" target="_blank" rel="noopener">Instagram ↗</a><a data-crisp-open aria-describedby="chat-availability" href="https://go.crisp.chat/chat/embed/?website_id=61ecae3f-f1da-4bb8-b57f-42809a607fed">Chat with us</a></div>
+<div class="contact-dock" aria-label="Contact the Maison"><a href="mailto:info@zelrocprive.com">Email us <span>24/7</span></a><a href="https://www.instagram.com/zelrocprive/" target="_blank" rel="noopener">Instagram ↗</a><a data-concierge-open data-crisp-open aria-describedby="chat-availability" href="https://go.crisp.chat/chat/embed/?website_id=61ecae3f-f1da-4bb8-b57f-42809a607fed">How can we help?</a></div>
 <p id="chat-availability" class="chat-help" data-chat-status role="status" aria-live="polite">Contact us 24/7. Our team will respond personally; email info@zelrocprive.com whenever it suits you.</p>
-<script src="assets/crisp.js?v=20261024-chat-2" defer data-crisp-installation></script>
+<script src="assets/crisp.js?v=20261025-concierge-1" defer data-crisp-installation></script>
 
 <dialog class="enquiry-dialog" data-enquiry-dialog aria-label="Begin your enquiry"><div class="enquiry-dialog__bar"><span>Your enquiry</span><button type="button" data-enquiry-close aria-label="Close enquiry">Close <span aria-hidden="true">×</span></button></div><iframe data-enquiry-frame title="Your enquiry details" referrerpolicy="same-origin"></iframe></dialog>
-<script src="assets/enquiry-dialog.js" defer></script>
+<script src="assets/enquiry-dialog.js?v=20261025-concierge-1" defer></script>
+
+<div class="concierge-invitation" data-concierge-invitation hidden><p>A little inspiration—or something already in mind?</p><button type="button" data-concierge-dismiss aria-label="Dismiss invitation">×</button></div>
+<dialog class="concierge" data-concierge aria-labelledby="concierge-title">
+ <header class="concierge__header"><span>ZELRÔC PRIVÉ</span><button type="button" data-concierge-close>Close <span aria-hidden="true">×</span></button></header>
+ <div class="concierge__body" data-concierge-body></div>
+ <footer class="concierge__footer"><div><button type="button" data-concierge-back>Back</button><button type="button" data-concierge-restart>Start again</button></div><button type="button" class="concierge__team" data-concierge-team>Speak to our team</button></footer>
+</dialog>
+<script src="assets/concierge-guide.js?v=20261025-concierge-1" defer></script>
+<script src="assets/concierge.js?v=20261025-concierge-1" defer></script>
     <!-- END FOOTER -->
-    <script src="assets/site.js?v=20261024-chat-2"></script>
-    <script src="assets/enquiry.js"></script>
+    <script src="assets/site.js?v=20261025-concierge-1"></script>
+    <script src="assets/enquiry.js?v=20261025-concierge-1"></script>
   </body>
 </html>
