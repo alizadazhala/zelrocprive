@@ -66,6 +66,7 @@
   const nature = form.elements.namedItem('nature');
   if (kind && [...nature.options].some(option => option.value === kind)) nature.value = kind;
   if (kind === 'Dining & Nightlife') { const dining = form.querySelector('input[name="services"][value="Dining reservations"]'); if (dining) dining.checked = true; }
+  if (/Thoughtful gestures/.test(context)) { const gifts = form.querySelector('input[name="services"][value="Celebrations & thoughtful gifts"]'); if (gifts) gifts.checked = true; }
   if (context) {
     const note = form.querySelector('[data-enquiry-context]');
     note.hidden = false; note.textContent = `Your starting point: ${context}`;
@@ -75,6 +76,11 @@
     status.textContent = ''; button.disabled = false; button.textContent = 'Send Enquiry';
     form.querySelectorAll('[required]').forEach(field => field.setCustomValidity(''));
   }
+  // Optional fields can still be invalid; reveal their section before native validation focuses them.
+  form.addEventListener('invalid', event => {
+    let section = event.target.closest('details');
+    while (section) { section.open = true; section = section.parentElement.closest('details'); }
+  }, true);
   form.addEventListener('input', invalidate);
   form.addEventListener('change', invalidate);
   form.addEventListener('submit', async event => {

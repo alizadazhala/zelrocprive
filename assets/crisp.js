@@ -10,6 +10,7 @@
   const queue = command => window.$crisp.push(command);
   const markOpen = () => {
     clearTimeout(waitTimer);
+    document.dispatchEvent(new Event('zelroc:concierge-close'));
     document.documentElement.classList.add('crisp-chat-open');
   };
   queue(['do', 'chat:hide']);
@@ -21,7 +22,8 @@
     clearTimeout(waitTimer);
     document.documentElement.classList.remove('crisp-chat-open');
     queue(['do', 'chat:hide']);
-    returnFocus?.focus();
+    const focusTarget = returnFocus?.checkVisibility?.() === false ? document.querySelector('[data-concierge-open]') : returnFocus;
+    focusTarget?.focus();
   }]);
   // Delegation also covers dynamically inserted controls, without duplicate handlers.
   document.addEventListener('click', event => {
@@ -32,6 +34,20 @@
     if (failed || typeof window.$crisp.is !== 'function') return;
     try {
       returnFocus = control;
+      if (control.hasAttribute?.('data-crisp-draft')) {
+        const draft = document.querySelector('[data-concierge-summary]')?.value.trim();
+        const feedback = document.querySelector('[data-concierge-handoff-status]');
+        let confirmed = false;
+        try {
+          if (draft && typeof window.$crisp.get === 'function') {
+            const existing = window.$crisp.get('message:text') || '';
+            const desired = existing.includes(draft) ? existing : existing ? existing + '\n\n' + draft : draft;
+            queue(['set', 'message:text', [desired]]);
+            confirmed = window.$crisp.get('message:text') === desired;
+          }
+        } catch (_) { /* Copy my request remains available; never claim an unverified transfer. */ }
+        if (feedback) feedback.textContent = confirmed ? 'Your request is in the chat draft. Review it and press Send when you are ready.' : 'Use Copy my request if your words are not in the chat draft.';
+      }
       queue(['do', 'chat:show']);
       queue(['do', 'chat:open']);
       if (window.$crisp.is('chat:opened')) markOpen();
