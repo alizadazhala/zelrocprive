@@ -10,8 +10,9 @@
   const link=event.target.closest('a[href]');if(!link||event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
   const url=new URL(link.href,location.href);if(url.origin!==location.origin||!url.pathname.endsWith('/contact.html'))return;
   if(location.pathname.endsWith('/contact.html'))return;
-  event.preventDefault();opener=link.closest("[data-mobile-panel]")?document.querySelector("[data-menu-toggle]"):link;url.searchParams.set('embed','1');url.hash='private-enquiry';
+  event.preventDefault();opener=link.closest("[data-mobile-panel]")?document.querySelector("[data-menu-toggle]"):link.closest("[data-concierge]")?document.querySelector("[data-concierge-open]"):link;url.searchParams.set('embed','1');url.hash='private-enquiry';
   window.$crisp?.push(['do','chat:hide']);document.documentElement.classList.remove('crisp-chat-open');
+  document.dispatchEvent(new Event('zelroc:concierge-close'));
   oldOverflow=document.body.style.overflow;frame.src=url.href;dialog.showModal();document.documentElement.classList.add('enquiry-active');document.body.style.overflow='hidden';close.focus();
  });
 })();

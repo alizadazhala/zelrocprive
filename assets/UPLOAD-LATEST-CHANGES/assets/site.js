@@ -7,7 +7,7 @@ const close = document.querySelector("[data-mobile-close]");
 let menuReturnFocus, menuOverflow = "";
 function setMenu(open) {
   if (!panel || panel.classList.contains("is-open") === open) return;
-  if (open) window.$crisp?.push(["do", "chat:hide"]);
+  if (open) { document.dispatchEvent(new Event("zelroc:concierge-close")); window.$crisp?.push(["do", "chat:hide"]); }
   if (open) { menuReturnFocus = toggle || document.activeElement; menuOverflow = document.body.style.overflow; panel.scrollTop = 0; }
   panel.classList.toggle("is-open", open);
   panel.inert = !open;
