@@ -1,5 +1,7 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Page not found | ZELRÔC PRIVÉ</title><meta name="description" content="This address could not be found. Return to the ZELRÔC PRIVÉ Maison or begin a private enquiry."><meta name="robots" content="noindex"><link rel="canonical" href="https://zelrocprive.com/404.html"><style>body{margin:0;background:#f8f5ee;color:#1b2a41;font:16px/1.8 system-ui,sans-serif}main{max-width:760px;margin:auto;padding:18vh 24px}p{max-width:540px}h1{font:normal clamp(44px,8vw,80px)/1.1 Georgia,serif}nav{display:flex;flex-wrap:wrap;gap:24px}a{color:inherit;text-underline-offset:6px;overflow-wrap:anywhere}:focus-visible{outline:2px solid;outline-offset:5px}.eyebrow{font-size:11px;letter-spacing:.2em}button{padding:12px 18px;min-height:44px;border:1px solid #1b2a41;background:transparent;color:inherit;font:inherit;cursor:pointer}</style></head><body><main id="main-content" tabindex="-1"><p class="eyebrow">ZELRÔC PRIVÉ / 404</p><h1>A different direction.</h1><p>This address could not be found. Return to the Maison or tell us what you have in mind.</p><nav aria-label="Page recovery"><a href="https://zelrocprive.com/">Return to the Maison</a><a href="https://zelrocprive.com/contact.html">Begin Your Enquiry</a><a href="https://zelrocprive.com/membership.html">ZELRÔC ÉLITE</a></nav><p><a href="mailto:info@zelrocprive.com">info@zelrocprive.com</a><br><a href="https://www.instagram.com/zelrocprive/">Instagram</a></p><p><a data-crisp-open href="https://go.crisp.chat/chat/embed/?website_id=61ecae3f-f1da-4bb8-b57f-42809a607fed">Chat with us</a></p><p data-chat-status role="status" aria-live="polite"></p></main><!-- BEGIN CRISP -->
+<html lang="en"><head><meta charset="utf-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' https://*.crisp.chat 'sha256-bY4u+ntnkohGi81sGEXPDyi5D7bF/ElV7l8j0S4FboA='; style-src 'self' 'unsafe-inline' https://*.crisp.chat; img-src 'self' data: blob: https://*.crisp.chat; font-src 'self' data: https://*.crisp.chat; media-src 'self' blob: https://*.crisp.chat; frame-src 'self' https://*.crisp.chat https://*.crisp.help; worker-src 'self' blob: https://*.crisp.chat; connect-src 'self' https://formsubmit.co https://*.crisp.chat wss://*.relay.crisp.chat wss://*.relay.rescue.crisp.chat; form-action 'self' https://formsubmit.co; upgrade-insecure-requests"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Page not found | ZELRÔC PRIVÉ</title><meta name="description" content="This address could not be found. Return to the ZELRÔC PRIVÉ Maison or begin a private enquiry."><meta name="robots" content="noindex"><link rel="canonical" href="https://zelrocprive.com/404.html"><style>body{margin:0;background:#f8f5ee;color:#1b2a41;font:16px/1.8 system-ui,sans-serif}main{max-width:760px;margin:auto;padding:18vh 24px}p{max-width:540px}h1{font:normal clamp(44px,8vw,80px)/1.1 Georgia,serif}nav{display:flex;flex-wrap:wrap;gap:24px}a{color:inherit;text-underline-offset:6px;overflow-wrap:anywhere}:focus-visible{outline:2px solid;outline-offset:5px}.eyebrow{font-size:11px;letter-spacing:.2em}button{padding:12px 18px;min-height:44px;border:1px solid #1b2a41;background:transparent;color:inherit;font:inherit;cursor:pointer}</style></head><body><main id="main-content" tabindex="-1"><p class="eyebrow">ZELRÔC PRIVÉ / 404</p><h1>A different direction.</h1><p>This address could not be found. Return to the Maison or tell us what you have in mind.</p><nav aria-label="Page recovery"><a href="https://zelrocprive.com/">Return to the Maison</a><a href="https://zelrocprive.com/contact.html">Begin Your Enquiry</a><a href="https://zelrocprive.com/membership.html">ZELRÔC ÉLITE</a></nav><p><a href="mailto:info@zelrocprive.com">info@zelrocprive.com</a><br><a href="https://www.instagram.com/zelrocprive/">Instagram</a></p><p><a data-crisp-open href="https://go.crisp.chat/chat/embed/?website_id=61ecae3f-f1da-4bb8-b57f-42809a607fed">Chat with us</a></p><p data-chat-status role="status" aria-live="polite"></p></main><!-- BEGIN CRISP -->
     <script data-crisp-installation>/* One shared installation; chat opens only after a visitor's explicit click. */
 (() => {
   if (new URLSearchParams(location.search).get('embed') === '1' && window.parent !== window) return;
@@ -17,6 +19,12 @@
   };
   queue(['do', 'chat:hide']);
   queue(['config', 'sound:mute', [true]]);
+  // Accept messages on every device, regardless of the account's current presence.
+  // Actual online status is configured in Crisp Account > Availability.
+  queue(['config', 'hide:on:away', [false]]);
+  queue(['config', 'hide:on:mobile', [false]]);
+  queue(['config', 'hide:vacation', [false]]);
+  queue(['config', 'availability:tooltip', [false]]);
   queue(['config', 'color:theme', ['blue_grey']]);
   queue(['config', 'container:index', [70]]);
   queue(['on', 'chat:opened', markOpen]);
@@ -37,7 +45,7 @@
     try {
       returnFocus = control;
       if (control.hasAttribute?.('data-crisp-draft')) {
-        const draft = document.querySelector('[data-concierge-summary]')?.value.trim();
+        const draft = control.__zelrocEnquiryDraft || document.querySelector('[data-concierge-summary]')?.value.trim();
         const feedback = document.querySelector('[data-concierge-handoff-status]');
         let confirmed = false;
         try {
