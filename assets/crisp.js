@@ -15,6 +15,12 @@
   };
   queue(['do', 'chat:hide']);
   queue(['config', 'sound:mute', [true]]);
+  // Accept messages on every device, regardless of the account's current presence.
+  // Actual online status is configured in Crisp Account > Availability.
+  queue(['config', 'hide:on:away', [false]]);
+  queue(['config', 'hide:on:mobile', [false]]);
+  queue(['config', 'hide:vacation', [false]]);
+  queue(['config', 'availability:tooltip', [false]]);
   queue(['config', 'color:theme', ['blue_grey']]);
   queue(['config', 'container:index', [70]]);
   queue(['on', 'chat:opened', markOpen]);
@@ -35,7 +41,7 @@
     try {
       returnFocus = control;
       if (control.hasAttribute?.('data-crisp-draft')) {
-        const draft = document.querySelector('[data-concierge-summary]')?.value.trim();
+        const draft = control.__zelrocEnquiryDraft || document.querySelector('[data-concierge-summary]')?.value.trim();
         const feedback = document.querySelector('[data-concierge-handoff-status]');
         let confirmed = false;
         try {

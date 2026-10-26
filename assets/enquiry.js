@@ -33,16 +33,28 @@
     ].join('\n');
     return {subject, body, href: `mailto:info@zelrocprive.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`};
   }
+  function deliveryError(code) {
+    const error = new Error('Delivery was not confirmed.');
+    error.code = code;
+    return error;
+  }
   async function sendEnquiry(email, guest, fetcher = root.fetch.bind(root), signal) {
+    // Provide an explicit public form URL: privacy settings and local previews may omit Referer.
     const response = await fetcher('https://formsubmit.co/ajax/info@zelrocprive.com', {
       method: 'POST', headers: {'Content-Type':'application/json', 'Accept':'application/json'},
+      credentials: 'omit', cache: 'no-store', referrerPolicy: 'strict-origin-when-cross-origin',
       body: JSON.stringify({name:guest.name, email:guest.email, _replyto:guest.email,
-        _subject:'ZELRÔC PRIVÉ — '+email.subject, message:email.body, _template:'table'}), signal
+        _url:'https://zelrocprive.com/contact.html',
+        _subject:'ZELRÔC PRIVÉ — '+email.subject.replace(/[\r\n]+/g, ' '), message:email.body, _template:'table'}), signal
     });
-    const result = await response.json();
-    if (!response.ok || !(result.success === true || result.success === 'true') || /activat|confirm your email/i.test(result.message || '')) {
-      throw new Error('Delivery was not confirmed.');
-    }
+    let result;
+    try { result = await response.json(); } catch { throw deliveryError(response.status === 429 ? 'busy' : 'service'); }
+    const message = String(result?.message || '');
+    if (/activat|actived|confirm your email/i.test(message)) throw deliveryError('activation');
+    if (/referer|referrer|web server|browsed as html/i.test(message)) throw deliveryError('origin');
+    if (/captcha|robot|spam/i.test(message)) throw deliveryError('verification');
+    if (response.status === 429) throw deliveryError('busy');
+    if (!response.ok || !(result?.success === true || result?.success === 'true')) throw deliveryError('service');
     return result;
   }
   root.ZelrocEnquiry = {buildEnquiryEmail, sendEnquiry};
@@ -59,6 +71,24 @@
   const status = form.querySelector('[data-form-status]');
   const button = form.querySelector('[type="submit"]');
   let sending = false;
+  const recovery = form.querySelector('[data-enquiry-recovery]');
+  const preview = form.querySelector('[data-enquiry-copy]');
+  const copyStatus = form.querySelector('[data-enquiry-copy-status]');
+  function prepareRecovery(email) {
+    if (!recovery) return;
+    preview.value = email.body;
+    form.querySelector('[data-enquiry-email-fallback]').href = email.href;
+    recovery.hidden = false;
+  }
+  form.querySelector('[data-enquiry-copy-button]')?.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(preview.value);
+      copyStatus.textContent = 'Your enquiry is copied. Paste it into email or chat when you are ready.';
+    } catch {
+      preview.focus(); preview.select();
+      copyStatus.textContent = 'Select and copy the enquiry below, then paste it into email or chat.';
+    }
+  });
   const params = new URLSearchParams(location.search);
   const context = (params.get('context') || '').slice(0, 500);
   const requestedKind = params.get('kind');
@@ -74,6 +104,10 @@
   function invalidate() {
     if (sending) return;
     status.textContent = ''; button.disabled = false; button.textContent = 'Send Enquiry';
+    if (recovery && !recovery.hidden) {
+      prepareRecovery(buildEnquiryEmail(new FormData(form), context));
+      if (copyStatus) copyStatus.textContent = '';
+    }
     form.querySelectorAll('[required]').forEach(field => field.setCustomValidity(''));
   }
   // Optional fields can still be invalid; reveal their section before native validation focuses them.
@@ -96,15 +130,25 @@
     form.setAttribute('aria-busy', 'true');
     const fields = [...form.querySelectorAll('input,select,textarea,fieldset')].filter(field => !field.disabled);
     fields.forEach(field => field.disabled = true);
+    if (recovery) recovery.hidden = true;
     status.textContent = 'Sending your enquiry…';
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 30000);
     try {
       await sendEnquiry(email, {name:String(data.get('name')).trim(),email:String(data.get('email')).trim()}, root.fetch.bind(root), controller.signal);
-      status.textContent = 'Thank you. Your enquiry has been submitted. We will reply personally to your email address.';
+      status.textContent = 'Thank you. Your enquiry has been submitted to our delivery service. We will reply personally to your email address.';
       button.textContent = 'Enquiry Submitted';
-    } catch {
-      status.textContent = 'We could not confirm delivery. Your details are still here. Please try again, or email info@zelrocprive.com directly.';
+    } catch (error) {
+      const reasons = {
+        activation: 'Our enquiry delivery service needs an inbox confirmation.',
+        origin: 'The delivery service could not verify this page.',
+        verification: 'The delivery service requested additional verification.',
+        busy: 'The delivery service is receiving too many requests.',
+        service: 'The delivery service did not accept this enquiry.'
+      };
+      const reason = error.name === 'AbortError' ? 'The delivery service took too long to respond.' : reasons[error.code] || 'The connection to our delivery service was interrupted.';
+      status.textContent = 'We could not confirm delivery. ' + reason + ' Your details are still here. Try again, or use email or chat below.';
+      prepareRecovery(email);
       button.disabled = false; button.textContent = 'Try Again';
     } finally {
       clearTimeout(timeout); sending = false; form.removeAttribute('aria-busy');
