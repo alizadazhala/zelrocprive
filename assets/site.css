@@ -2864,3 +2864,29 @@ body:has(.mobile-panel.is-open) .concierge-invitation { visibility:hidden; }
 .privacy-copy h2 {margin-top:32px;font-size:clamp(25px,4vw,34px);}
 .privacy-copy p {line-height:1.7;}
 @media(max-width:600px){.enquiry-recovery {padding:18px;}.enquiry-recovery__actions {display:grid;}.enquiry-recovery__actions .button {width:100%;box-sizing:border-box;}}
+
+/* Specific reasons stay visible; deeper editorial detail remains optional. */
+.hotel-card .hotel-choice {margin:18px 0;font-size:16px;line-height:1.7;}
+.hotel-reasons,.dining-reasons {margin:18px 0 24px;padding-left:20px;line-height:1.65;font-size:15px;}
+.hotel-reasons li,.dining-reasons li {padding-left:4px;margin-bottom:10px;}
+.hotel-status {font-size:14px;color:#64532d;line-height:1.5;}
+.hotel-explore__body h4 {font-size:26px;margin:28px 0 12px;letter-spacing:normal;}
+.hotel-explore__body p {font-size:16px;line-height:1.75;}
+.destination-dining-group {margin:40px 0 56px;}
+.destination-dining-group>h3 {font-size:clamp(26px,3vw,36px);margin-bottom:24px;}
+.destination-opening__image figcaption {font-size:14px;line-height:1.6;}
+.destination-opening__image figcaption a {display:inline-flex;align-items:center;min-height:44px;}
+.photo-credits article {padding:32px 0;border-bottom:1px solid var(--gold,#a58e62);}
+.photo-credits h2 {font-size:28px;}
+.photo-credits p,.photo-credits span {overflow-wrap:anywhere;}
+.dining-filters {grid-template-columns:repeat(4,minmax(0,1fr));}
+@media(max-width:900px){.dining-filters {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:600px){.dining-filters {grid-template-columns:1fr;}.hotel-reasons,.dining-reasons {font-size:15px;}.hotel-explore__body h4 {font-size:25px;}}
+.hotel-explore__body :is(h3,h4,h5,h6) {font:400 26px/1.25 var(--serif);margin:28px 0 12px;letter-spacing:normal;}
+.hotel-discuss {max-width:100%;min-height:44px;box-sizing:border-box;white-space:normal;padding:14px 18px;font-size:12px;letter-spacing:.08em;}
+.destination-practical {max-width:850px;margin:36px 0;}
+.destination-practical h3 {font-size:30px;}
+@media(max-width:600px){.hotel-card .eyebrow {font-size:13px;letter-spacing:.1em;}.hotel-explore>summary {font-size:16px;}.hotel-discuss {font-size:14px;}}
+
+/* Dining refinements: the same card is filtered by several occasions. */
+.dining-detail-label{font-size:.875rem;font-weight:600;margin-bottom:.5rem}.dining-search{max-width:38rem;margin:1.5rem 0}.destination-dining-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.dining-discuss{display:inline-flex;align-items:center;min-height:44px;margin-top:.75rem}.dining-story{margin-top:3rem;max-width:52rem}.dining-search input,.destination-dining-filters input{min-height:48px;width:100%;font-size:16px;box-sizing:border-box}.destination-dining-filters+ [data-dining-status]{margin-top:1rem}@media(max-width:600px){.destination-dining-filters{grid-template-columns:1fr}.dining-option .dining-practical summary{min-height:44px;font-size:16px}.dining-discuss{font-size:16px}}
